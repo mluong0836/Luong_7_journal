@@ -1,0 +1,6 @@
+We setted up a new repository on github so it would make it easier for us to access the wiki pages that we create almost everyday.
+The command every day for github are:
+1. git add myfilename
+2. git commit -m "This is my journal for September 10th"
+3. git push -u origin master
+ 
