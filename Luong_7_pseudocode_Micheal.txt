@@ -1,0 +1,40 @@
+Begin:
+//L
+	Do 2 times 
+	Draw Downards
+	Turn right 90 degrees
+
+//U
+	Draw down 
+	Turn right 90 degrees
+	Draw right 
+	turn upwards 90 degrees
+	Draw upwards
+
+//O
+	Do 4 times 
+	Draw Forward
+	Turn left 90 degrees
+
+//N
+	Draw Upward
+	Turn right 45 degrees
+	Draw Down
+	Turn up 45 degrees
+	Draw Forward
+
+//G
+	Draw to the left
+	Turn down 90 degrees
+	Draw downwards
+	Turn right 90 degrees
+	Draw right
+	Turn 90 degrees up
+	Draw upwards
+	Turn left 90 degrees
+	Draw left
+End:
+	
+	
+
+
