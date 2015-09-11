@@ -1,0 +1,6 @@
+1. Pseudocodes are easier codes used to help us prepare for the actual coding for a new program. Pseudocoding is good for organizing the ideas that you would want to 
+   incorporate into your actual program. So, it serves as a preparation for the actual program that you are planning to make. 
+
+2. We will be using pseudocodes in this class because it will help give order/structure when we start the actual projects and provides us with an idea to start with. It keeps us 
+   from getting stumped because we don't know what to do. In addition, we will need pseudocodes in this class because it will help us track errors that we could make in our actual 
+   programs, it's like a rough draft.  
