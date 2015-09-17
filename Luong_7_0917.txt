@@ -1,0 +1,4 @@
+The five different data types are int, float, short/long/double, Char, string, and bodean. Int represented whole numbers. On the otherhand short/long/double represents a 16 bit,
+a 64 bit, and a 64 bit. The function of short/long/double is for decimal numbers. Char are characters like 1,2,3,4,etc... In addition, a string is a collection of chars, so
+ that means it is a combination of characters like 1ddjkfj. Float represents a 32 bit and also used to represent decimals. Lastly, Boodean is the intended
+ to represent the truth values of logic problems on a program.
