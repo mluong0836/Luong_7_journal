@@ -1,0 +1,8 @@
+1. No, I haven't received credit for all of my journals. I still need to rename my 0909 and 0911 journal as Luong_7_0909.txt and Luong_7_0911.txt and resend it. 
+
+2. It is important to use the naming convention specified when naming a file because not using this convention could cause confucion later on when you or your teacher
+   try to find your files. If you follow the specified naming conventional, you could easily fid it with a search later on. 
+
+3. The command to copy in linux is cp. In addition, to copy all of the directories into the curret directory, you would type cp and the directory you were
+   in. For example you could type cp /home/hope/files directory to copy all subdirectories into the main one that you will be using.  
+
