@@ -1,0 +1,5 @@
+1. We are setting up a new repository in github so we can be able send all of our all of our journals to github so Mr. Davis could see. After today, all I need to do to send
+   my journal is to type:
+		       git add
+		       git commit -m
+		       git push -u origin master 
