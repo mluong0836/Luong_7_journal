@@ -1,0 +1,10 @@
+1. Steve Ballmer called the GPL a virus because he felt that the GNU General Public Service License (GPL) incorporated by certain softwares force that all software from it must
+   be under this license, which is very demanding, in his opinion, because he felt that different softwares should have their own say in whether or not they want to be under the 
+   GPL License. Therefore, GPL License is like a virus because it forces other sortwares in the main one to go under the license even though they might not want to. 
+
+2. An open source software is mostly free while proprietary software is not free. In addition, an open source allows the user to copy, modify, use, and analyze the software.
+   On the other hand, a proprietary software reserve the freedoms and rights for the developer. In other words, proprietary softwares doesn't allow users to modify, copy, or even
+   use it freely. So, they are opposites basically. One is free while the other one is not free. 
+
+3. The MIT License allows user to freely modify the software and set it up as a proprietary software, without having to give credit to the programs from MIT. GPL License 
+    also allows users to copy, modify, and use the softwares. However, the GPL licenses require users to give credit and share the modified software to the public.  
