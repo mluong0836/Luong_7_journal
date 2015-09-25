@@ -1,0 +1,27 @@
+Paid License- License that is not free, and is paid in order to get the programs.
+
+Shareware- A type proprietary software that is initially free. In addition, shareware strongly encourages users to make and share copies of the program, which can be evident
+           on internet websites where you could download these programs.
+
+Trialware- A computer software that is free for a limited period of time. For example, softwares that allow free downloads for a month so users can decide whether or not to pay for
+           for the actual program. In other words, ther like free trials. 
+
+Ad-ware- A software that automatically displays/downloads advertisements when a user is online.
+
+Crippleware- Allows customers to try certain aspects of the software/program before purchasing a registration key. Unlike the trialware, crippleware disables certain functions
+              of a software until you actually purchase it. In other words, crippleware gives an incomplete trial of the software, since users can only use certain functions until 
+            they buy the actual programs.
+
+Freemium- It is a pricing strategy in which the main software is free to download, but proprietary features costs money, which means the company still gets some money later on when 
+          the user decides to buy some proprietary softwares.
+
+Freeware (vs Free-Opensource)- Software that is free of charge. In other words, it means that you can download the software for free.
+
+Richard Stallman- Richard Stallman created the GNU tools for Linux to utilize later on. He was one of the authors of GPL, and he wants to allow users to be able to download certain
+                  softwares for free.
+
+Lawrence Lessig- Lawrence Lessig focuses on fair use of software. He tries to establish ways to protect consumers from large and oppressive companies.
+
+Eben Moglen- Eben Moglen was a professor who agrees with free softwares. FreedomBox was created to enable users to have access to free softwares. 
+
+
