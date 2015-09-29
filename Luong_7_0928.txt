@@ -1,0 +1,10 @@
+1. You can count in Java by starting from zero and going up until the program is finished with the requirement. For example, if you say i < 100, the computer would count from
+   zero to one hundred. Therefore, it depends on what varaible you input the program with.
+
+2. You can check to see if a number is divisible by using modulo 2 to determine whether or not he number is divisible by twoo, or modulo 3 to find integers divisible by three. So,
+   it depends on what number you input for modulo like module 2,3,4,etc...
+
+3. You can track if a number has a divisor if you use modulo 2,3,4,etc... and see if it able to divide. If it is divisible, then that indicates that the particular number has a
+   divisor which is the 2,3,4,etc... that you input for the modulo. 
+
+
