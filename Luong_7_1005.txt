@@ -1,0 +1,5 @@
+1. Code comments are comments that tell the user/you some key information, like what it does, about a particular code that you just typed in. For instance, if you typed a code for
+   identifying prime numbers, you could add a comment to let you know/others understand what that code does. So, code comments specify what you are doing. Code comments are
+   good because they serve as a brief summary/annotation of the specific codes that you just inputted in your program. As a result, you can later look back and easily read and
+   fix your program, if it had any errors, without having an issue of trying to interpret what the codes that you typed do.
+
