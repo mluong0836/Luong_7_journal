@@ -1,0 +1,8 @@
+1. Methods are codes that perform specific functions for your program through a cycle. For example, if you wanted to find the prime numbers for a list of numbers, you
+ would input a boolean isPrime, which is a method that will perform the function of finding prime numbers and return a true or false statement.
+
+2. Class represents the blueprint, which is within the main program, and make copies of these blueprints as a template for other methods to use.   
+
+3. Instances are variables that are within the classes that you have written.
+
+4. Class methods are methods that belong to the specific classes. 
