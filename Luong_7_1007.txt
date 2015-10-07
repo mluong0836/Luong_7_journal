@@ -1,0 +1,5 @@
+1. A Java class is a blueprint that provides the main program with a template to perform other methods within a program.
+
+2. A java class for JavaFX could be classsquare.
+
+3. A method for class would be static boolean width.
