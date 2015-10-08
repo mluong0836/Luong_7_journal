@@ -1,0 +1,11 @@
+1. My tentative thoughts for my art project would be to print out a rectangle when the values indicate that is it divisible by 10. It will print out a triangle if the value is 
+   a prime number, and print out Micheal using circles and square if it is divisible by 3. The colors would be a purple square, a blue circle, and a green triangle.
+
+2. A few methods that I might use includes arcWidthProperty() to define the four corners, and arcHeightProperty to define the vertical and horizontal diameter of the shape.
+
+3. I could incorporate a for loop by using boolean and print line to print true and false values through shapes and colors.
+
+4. I could incorporate an if, else if ,and else statement through the for loop that I will eventually create. I could say that if the integer is not divisible by 4, it would
+   print out a complex design of circles. 
+
+5. I might use logarithms. 
