@@ -31,7 +31,8 @@ public class Luong_7_methodsmadness extends Application {
         drawCircle(gc);
         drawTriangle(gc);
         drawmoreRectangles(gc,160,50,60,70);
-        //drawlotsofcircles(gc, 50);
+        drawmoreCircles(gc);
+        drawSmile(gc);
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
@@ -53,8 +54,8 @@ public class Luong_7_methodsmadness extends Application {
         
     }
    private void drawTriangle(GraphicsContext gc) {
-     double [] myX = {90,40,60};
-     double [] myY = {20,30,40};
+     double [] myX = {160,110,130};
+     double [] myY = {155,145,175};
      gc.fillPolygon(myX, myY,3);
      gc.setFill(Color.RED);
      gc.setStroke(Color.PURPLE);
@@ -64,10 +65,17 @@ public class Luong_7_methodsmadness extends Application {
        gc.setStroke(Color.PURPLE);
        gc.fillRect(x,y,w,h);
    }
+     private void drawmoreCircles(GraphicsContext gc) {
+       gc.setFill(Color.YELLOW);
+       gc.setStroke(Color.RED);
+       gc.fillOval(178,71,30,30);
    }
-     //private void drawlotsofcircles(GraphicsContext gc, int num) {
-       //for (int i = 0; 1 < num; i++) {
-          // drawCircle(gc, 25 * i), (25 * i), 25);
+   private void drawSmile(GraphicsContext gc) {
+       gc.setFill(Color.DEEPPINK);
+       gc.setStroke(Color.AQUA);
+       gc.fillOval(50, 190, 20, 20);
+   }
+}
        
    
    
