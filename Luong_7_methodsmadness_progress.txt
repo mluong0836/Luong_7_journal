@@ -1,0 +1,5 @@
+In my methodsmadness project, I attempted to draw a random face through the use of several methods. So far I have finished the basic entire face. For instance, I used rectangles and
+circles to create the features of the eyes. In addition, I used a triangle to create the nose and small circles within a for loop to create a long line of circles; therefore,
+creating a smile. Furthermore, my background is currently blue, but in the near future, I am planning to make a swirly red, blue, and green background also through the use of a for
+loop. So, in the future, my picture would have a "hypnotizing" background with a face on top of it. I am also planning to add a beard later on by using a method that draws a large
+oval.     
