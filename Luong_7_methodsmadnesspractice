@@ -70,12 +70,25 @@ public class Luong_7_methodsmadness extends Application {
        gc.setStroke(Color.RED);
        gc.fillOval(178,71,30,30);
    }
+     private void drawCircle(GraphicsContext gc, int x, int y) {
+           gc.setFill(Color.DEEPPINK);
+      gc.setStroke(Color.AQUA);
+      gc.fillOval(x, y, 20, 20);
+     }
    private void drawSmile(GraphicsContext gc) {
-       gc.setFill(Color.DEEPPINK);
-       gc.setStroke(Color.AQUA);
-       gc.fillOval(50, 190, 20, 20);
+     
+       double [] Xs = {60,70,80,95,105,115,125,135,145,155,165,175,185};
+       double [] Ys = {200,205,205,205,205,205,205,205,205,205,205,200};
+       for (int i = 0; i < 12; i++) {
+           drawCircle(gc, (int) Xs[i],(int)Ys[i]);
+                   }
+      
+       
+       
    }
 }
+
+
        
    
    
