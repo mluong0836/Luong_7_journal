@@ -1,0 +1,11 @@
+1. Yes, I am almost done with all of my methods because I have been working and tinkering with the codes since day one of the project. 
+
+2. On the days that we went over the art methods, I started writing my methods. For instance, I wrote drawCircles for a drawing circle method, drawRectangle to represent the
+   method for drawing the rectangles for the eyes, drawSmile for the circles that will together form a large smile, and drawBackground to represent the squirly background. The image
+   that I attempted to draw was a geometric face with a hypnotizing background through a for loop. I have enjoyed this project so far.
+
+3. Yes, I noticed that there was an art method code shared in the journals because I was examining codes to help give me feedback on my personal standing of this project.
+
+4. Yes, I have examined the sample code on github because I was trying to figure out a way to incorporate a for loop in my art project and this provided me with the answers. 
+
+5. You would type private void drawRectangles(GraphicsContext gc) and specify the graphics context like the dimensions and the fill color, which is red. 
