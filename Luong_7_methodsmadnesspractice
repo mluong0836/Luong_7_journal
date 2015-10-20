@@ -24,9 +24,9 @@ public class Luong_7_methodsmadness extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Drawing Operations Test");
         Group root = new Group();
-        Canvas canvas = new Canvas(300, 250);
+        Canvas canvas = new Canvas(500, 500);
         GraphicsContext gc = canvas.getGraphicsContext2D();
-        drawBackground(gc,0,0,300,250);
+        drawBackground(canvas,gc,0,0,300,250);
         drawRectangles(gc,40,50,60,70);       
         drawCircle(gc);
         drawTriangle(gc);
@@ -37,9 +37,23 @@ public class Luong_7_methodsmadness extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
-    private void drawBackground(GraphicsContext gc, int x, int y, int w, int h) {
+    
+    private void drawBackground(Canvas canvas,GraphicsContext gc, double x, double y, int w, int h) {
         gc.setFill(Color.BLUE);
         gc.fillRect( x , y, w, h);
+          for (int sx = 0; sx < canvas.getWidth(); sx++) {
+            for (int sy = 0; sy < canvas.getHeight(); sy++) {
+                double dx = sx - x;
+                double dy = sy - y;
+              //  double r = Math.sqrt(dx*dx + dy*dy);
+                double r =Math.sqrt(dx*dx+dy*dy)+sx;
+                double angle = Math.PI / 256 * (3.5*r);
+        
+             int tx = (int) (+dx * Math.cos(angle) - dy * Math.sin(angle) + x / 10)+250;
+                int ty = (int) (+dx * Math.sin(angle) + dy * Math.cos(angle) + y/10)+250;
+            drawlittleCircle(gc, tx,ty);
+        } 
+    }
     }
 
     private void drawRectangles(GraphicsContext drawRectangles, int x, int y, int w, int h) {
@@ -70,7 +84,12 @@ public class Luong_7_methodsmadness extends Application {
        gc.setStroke(Color.RED);
        gc.fillOval(178,71,30,30);
    }
-     private void drawCircle(GraphicsContext gc, int x, int y) {
+     private void drawlittleCircle(GraphicsContext gc, double x, double y) {
+           gc.setFill(Color.YELLOWGREEN);
+      gc.setStroke(Color.AQUA);
+      gc.fillOval(x, y, 2, 2);
+     }
+     private void drawCircle(GraphicsContext gc, double x, double y) {
            gc.setFill(Color.DEEPPINK);
       gc.setStroke(Color.AQUA);
       gc.fillOval(x, y, 20, 20);
@@ -115,6 +134,5 @@ public class Luong_7_methodsmadness extends Application {
                           new double[]{210, 210, 240, 240}, 4);
      
 */
-
 
 
