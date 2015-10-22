@@ -1,0 +1,9 @@
+1. The purpose of the code art that I created was to create intricate designs that appeal to my senses. For instance, I founded that this project helped me enhance my core
+   understanding of javaFX and the codes and methods incorporated within the main project. Furthermore, this type of code art has helped me learn new ways to incorporate 
+   a for loop, drawing methods that is more advanced than processing, which we first used, and helped me learn coding and artistic techniques at the same time.
+
+2. The purpose of creating art with code to learn is to helped enhance our understanding of javaFX. In addition, through this project, I felt that I was able to grasp more of the
+   meaning of these specific codes and its functions. Furthermore, art codes has helped me learn more about the specific types of codes because visual learners have to see what 
+   the codes they type does. So, by typing gc.fillRect() and seeing the new dimensions  of the rectangle, you would now know that gc.fillRect() changes the length, width, height, 
+   and depth. So, art coding is good for visual learners like me.  
+    
