@@ -1,0 +1,4 @@
+1. Yes, my guessing game is a game because you are able to play the game successfully.
+
+2. I would make my game better by adding in for loops that would tell the player if 
+   they are low, high, and if they are close or not to the number.
