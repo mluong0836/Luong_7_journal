@@ -1,0 +1,14 @@
+1. A method is a type of code that allows easier access and modification within the actual codes and allows the coder to be able to use these methods more than once. As a result, 
+   we are able to easily encode specific functions within these different methods.
+
+2. The methods that I have used in my guessing game included playagain() and playthecounter(), which were within my while loop. For instance, my playagain method is within my while
+   loop, and I used this method as the main part of the game. This is why I was able to allow the players to guess numbers until they guess the magic number or when their number
+   of tries, 10, runs out. In this method, I incorporated for loops to tell the player if their number is higher or lower than the magic number. In addition, my playthecounter()
+   method is where I included my twist, in which the player loses if he or she runs out of tries. 
+
+3. A while loop is continuous loop that will continue to run as long as the conditions that I verifed are all true. 
+
+4. I used a while loop to run my guessing game as long as the player still has chances to guess the magic number, or guesses the number right. I used a boolean to check if the player
+   wants to play again or stop playing. Stopplaying takes in account when the player loses or guesses the number correctly. Playagain allows the player to continue playing. I 
+   used booleans to return true and fasle statements, which will then allow the player to quit or continue. In addition, I used a counter to count the number of tries and
+   provide a limited amount of tries before the player lose.   
