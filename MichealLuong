@@ -23,7 +23,6 @@ public class Luong_7_guessinggame {
         // TODO code application logic here
        playagain = true;
        magicnumber = Micheal.nextInt(100);
-       Scanner name = new Scanner (System.in);
        Scanner guess = new Scanner(System.in);
        System.out.println("Hello, would you like to play");
        Scanner yes_no = new Scanner(System.in);
@@ -31,8 +30,7 @@ public class Luong_7_guessinggame {
        System.out.println("What is your name?");     
        Scanner userinputname = new Scanner(System.in);
        username = userinputname.nextLine();
-      System.out.println("Hello " + username + " Please pick a number between 1-100 and press 1 to start");
-       userguess = guess.nextInt();
+       System.out.println("Hello " + username);
        while (playagain && counter > 0){
            playthegame();           
        }
@@ -41,7 +39,7 @@ public class Luong_7_guessinggame {
     }
     static void playthegame() {
         Scanner userinputnumbers = new Scanner(System.in);
-        System.out.println("Hello " + username + " Please pick a number between 1-100");
+        System.out.println( "Please pick a number between 1-100");
         userguess = userinputnumbers.nextInt(10);
         playagain = true;
         if (magicnumber == userguess) {
@@ -57,11 +55,23 @@ public class Luong_7_guessinggame {
             counter--;
             System.out.println("You have " + counter + " tries left.");
         }
+        /*
+          while(playagain == false) {
+              String yesorno;
+             
+              Scanner YES_NO = new Scanner(System.in);
+              System.out.println("Would you want to play again?" + YES_NO );
+              if(YES_NO.equalsIgnorecase) {
+                  
+              }
+                  
+          } 
+                */
     }
     static void playthecounter() {
         if(counter == 0) {
-            System.out.println("You have ran out of tries");  
+            System.out.println("You have ran out of tries"); 
+            System.out.println("The magic number was " + magicnumber);
         }
     }
       }  
- 
