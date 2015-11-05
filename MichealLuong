@@ -12,8 +12,9 @@ public class Luong_7_guessinggame {
     static int magicnumber;
     static Random Micheal = new Random();
     static boolean stopplay = false;
-    static boolean playagain;
+    static boolean playagain = true;
     static int counter = 10;
+    static Scanner again = new Scanner(System.in);
    
    
     /**
@@ -32,9 +33,10 @@ public class Luong_7_guessinggame {
        username = userinputname.nextLine();
        System.out.println("Hello " + username);
        while (playagain && counter > 0){
-           playthegame();           
+           playthegame();         
        }
        playthecounter();
+       PlayAgain();
        
     }
     static void playthegame() {
@@ -55,18 +57,7 @@ public class Luong_7_guessinggame {
             counter--;
             System.out.println("You have " + counter + " tries left.");
         }
-        /*
-          while(playagain == false) {
-              String yesorno;
-             
-              Scanner YES_NO = new Scanner(System.in);
-              System.out.println("Would you want to play again?" + YES_NO );
-              if(YES_NO.equalsIgnorecase) {
-                  
-              }
-                  
-          } 
-                */
+       
     }
     static void playthecounter() {
         if(counter == 0) {
@@ -74,4 +65,18 @@ public class Luong_7_guessinggame {
             System.out.println("The magic number was " + magicnumber);
         }
     }
-      }  
+    static void PlayAgain() {
+        System.out.println("Do you want to play again? Yes_No");
+             String Yes_No = again.nextLine();
+              if (Yes_No.contains("Y")) {
+                 playthegame();
+              }
+              if (Yes_No.contains("N")) {
+                  playagain = false;
+                  System.out.println("Well then, your lost " + username + "See you later");
+              }
+                
+        
+    }  
+    }
+    
