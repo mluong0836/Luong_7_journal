@@ -1,0 +1,11 @@
+1. Strings are objects and are a series/sets of characters typed in. For example, 21389adsfads would be an example of a string.
+
+2. Strings are good for allowing players to type in a response in a text based game. For instance, if you are asked if you would want to play again or no, you would have
+   to type in yes or no. If yes, your game would continue playing. However, if no, yoour game would exit the main while loop.
+
+3. Some string methods used in my guessing game includes String Yes_NO(), which will look for answer to my replay boolean. Another string method used would be String next_back()
+   to tell the program if he would want to go back a stage or go to the next page in a text based adventure game for instance.
+
+4. We are able to identify string methods by finding what the strings stated and find the parentheses clarifying the string method. For example, since strings belong to a class
+   if you type the string name with a dot, you would be provided with multiple strings. So,to identify a string, find the name of the string specified like String Yes_No and then
+   find Yes_No(char), which is the string method.  
