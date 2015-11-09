@@ -1,0 +1,9 @@
+1. No, I am not ready to begin coding my text-based game.
+
+2. The reason why I am not ready to start coding is because I still need to finish typing out my flow chart, since my clowchart is very detailed. Although it will take longer for me
+   to finish my .dot, I would have an advantage since I know exactly what I should do. Everything is already outlined and I just have to follow the set formula and I will be done.
+
+3. My biggest challenge is to actually make the entire text-based game to work as according to plan. I am still struggling to replay the while loops that I am planning to make.
+   This might be a ponential obstacle.
+
+4. Repeating while loops will be my biggest challenge because that is what my main program has to do in order to return to certain checkpoints that I have arranged in my game.
