@@ -1,0 +1,10 @@
+1. In my game, I can track the challenges that the player has solved through a boolean. This as a result will allow the program to check which challenges that the player has
+   or hasn't completed. For instance, if I typed in static boolean rocketship, this would check to see if your scores match the requirements within the coded while loop that I will
+    use.  
+
+2. I can track the character's HP by using a counter that will count down the number of hearts that you have left. Every game lost will lead to the reduction of HP. I can incorporate
+   the counter within my while loop.
+
+3. I can track the different items collected within the game by using multiple for loops that will allow the user a chance to use an item during their battles and will tell them 
+   how much of each item they have left. For example, if you are fighting the evil creatures and only have 12 HP left, you would be given the option to use your items when it's your 
+   turn. If my scanner reads that you would want to use the item, it would run the method that uses this item and it requirements. 
