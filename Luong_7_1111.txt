@@ -1,0 +1,6 @@
+1. Some challenges that the player in my game must solve includes but not limited too travelling through a maze full ofo traps, boss challenges, fighting small creatures,
+   and unlocking the doors to other rooms in the house.
+
+2. I will track if these challenges have been solved by setting uo booleans that check to see if the conditions are met to continu along the storyline. In addition, I
+   will use separate classes and methods to organize the game play simultaneously. Hopefully, if the all the plans are put to work, I will have a successful
+   text-based adventure game as my end result.
