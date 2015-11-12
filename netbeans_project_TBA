@@ -1,0 +1,64 @@
+package luong_7_tba_game;
+    import java.util.Scanner;
+/**
+ *
+ * @author mluong
+ */
+public class Luong_7_TBA_game {
+    static String username;
+    static String enter;
+    static String strings;
+    static String fdoor;
+    static Scanner responses  = new Scanner(System.in); //this is the scanner for all the responses in the game.
+    static boolean items;
+    static boolean spells;
+    static boolean door;
+    static Scanner next = new Scanner(System.in);
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Welcome to ABANDONED SPELLS. What is your name?");
+        Scanner userinputname = new Scanner(System.in);
+        username = userinputname.nextLine();
+        System.out.println(username + ", you had a depressing day today and was seeking refuge in an abandoned house, so you could ");
+        System.out.println("be alone, comforted by the isolation of the outside world.");
+        System.out.println("You had a lot of fun in the house, discovering hidden secrets that was forbidden to know. ");
+        System.out.println("It turns out that the book lying on the ground is a spell book from the Dark Ages.");
+        System.out.println("You were able to cast several spells, an introduction to the world of witchcraft.");
+        System.out.println("Thinking that you can bring back knowledge about witchcraft and casting spells.");
+        System.out.println("YOU WERE WRONG!!! You now have to deal with the evil spirits that guarded this book.");
+        System.out.println("There is no turning back now, use your spells to cast your way out of this mess or at least get out of here alive.");
+        System.out.println("GOOD LUCK " + username );
+        System.out.println("Press enter to continue.");
+        enter = next.nextLine();
+        System.out.println("Choose which door you would want to go through. Door 1 or Door 2.");
+        Scanner choose = new Scanner(System.in);
+        fdoor = choose.nextLine();
+     
+        if(fdoor.contains("1")) {
+            door = true;
+        }else {
+            door = false;
+        }
+            if(door) {
+                Door1();
+           }else {
+                Door2();
+            }
+         
+}
+       static void Door1() {
+           System.out.println("You are now currently in the living room...It is probably safe.");
+           System.out.println("Do you agree?");
+           String response;
+           responses= response.nextLine();
+
+       }
+       
+       static void Door2() {
+           System.out.println("bye");
+       }
+}
+        
