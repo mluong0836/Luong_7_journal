@@ -1,0 +1,5 @@
+1. I will use while loops in my game to run the methods that I created. Without while loops, it would be nearly impossible to code all the functions. While loops continue running 
+   as long as the coditions set are true. On the other hand, using if statements only would do the function once when I really need it to repeatedly do.
+
+2. The methods in my game will allow the player to enter different rooms of the house. As a result, players will easily transition from one room to the next when the set challenges
+   are met through the use of booleans. 
