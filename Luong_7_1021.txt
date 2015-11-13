@@ -1,0 +1,5 @@
+1. The purpose of the code art that I created is to display an array of shapes that will allow the viewer to 
+   picture a human's face with a swirl in the background that uses trigonometric functions to draw. In the end, the image
+   serves to create a "hypnosis state". A different perspective is that this art project allowed me to put my artistic 
+   and programming skills inter-play with one another.
+   
