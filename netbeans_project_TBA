@@ -9,11 +9,14 @@ public class Luong_7_TBA_game {
     static String enter;
     static String strings;
     static String fdoor;
+    static String direction;
+    static int health;
     static Scanner responses  = new Scanner(System.in); //this is the scanner for all the responses in the game.
     static boolean items;
     static boolean spells;
     static boolean door;
-    static Scanner next = new Scanner(System.in);
+    static boolean gameplay;
+    static Scanner next = new Scanner(System.in); // this is used to let the player press the enter key to continue
     /**
      * @param args the command line arguments
      */
@@ -22,6 +25,8 @@ public class Luong_7_TBA_game {
         System.out.println("Welcome to ABANDONED SPELLS. What is your name?");
         Scanner userinputname = new Scanner(System.in);
         username = userinputname.nextLine();
+        System.out.println(username + " here is a reminder...When you don't see text appear, press enter, this game will force you to read ");
+        System.out.println("INSTRUCTIONS!!!!");
         System.out.println(username + ", you had a depressing day today and was seeking refuge in an abandoned house, so you could ");
         System.out.println("be alone, comforted by the isolation of the outside world.");
         System.out.println("You had a lot of fun in the house, discovering hidden secrets that was forbidden to know. ");
@@ -36,25 +41,46 @@ public class Luong_7_TBA_game {
         System.out.println("Choose which door you would want to go through. Door 1 or Door 2.");
         Scanner choose = new Scanner(System.in);
         fdoor = choose.nextLine();
-     
         if(fdoor.contains("1")) {
             door = true;
         }else {
             door = false;
         }
             if(door) {
-                Door1();
+                Door1intro();
            }else {
                 Door2();
             }
-         
+     
 }
-       static void Door1() {
+       static void Door1intro() {  //challenge 1
            System.out.println("You are now currently in the living room...It is probably safe.");
            System.out.println("Do you agree?");
            String response;
-           responses= response.nextLine();
-
+           response = responses.nextLine();
+           System.out.println("YOU're WRONG...The creatures are chasing you. Navigate your way in the dark");
+           System.out.println("and use your spells to destroy the enemies.");
+           System.out.println("Press enter to continue...");
+           enter = next.nextLine();
+           System.out.println(username + " Use your fire spell to disintegrate your enemy");
+           System.out.println("Use your ice spell to freeze your opponents");
+           System.out.println("Use your brain to navigate through this dark arena... ");
+           System.out.println("Are you ready?");
+           enter = next.nextLine();
+           Door1challenge();
+       }
+       static void Door1challenge() {
+           
+           System.out.println("Where do you want to go? Left, Right, or Straight");
+           System.out.println("Ready. 3...2...1...GO!");
+           direction = next.nextLine();
+               if(direction.equalsIgnoreCase("left")) {
+                   
+               System.out.println("you met a creature! Use your powers to defeat it.");
+           }
+           
+           
+           
        }
        
        static void Door2() {
