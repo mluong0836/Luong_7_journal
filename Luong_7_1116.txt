@@ -1,0 +1,7 @@
+1. I will use methods to help direct the player to certain conditions when met. For instance, after beating the boss the player will be given the choice to heal or to continue on. 
+   Depending on where the character is, if he types heal, he/she will be directed to the heal method, or to the next challenge by the key method. In other words, I will use methods 
+   to help create a better flow between one setting to the next. 
+
+2. Some values that I will pass include the directions, whether or not the player is dead or alive and what will occur when these conditions are met. Another example would be the 
+   fighting that occurs. Depending on what spells they use, different things would be stated. FOr instance, ice spells will be worth 20 hit points, fire spell will be worth 50 hit
+   points, etc...
