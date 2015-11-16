@@ -9,19 +9,29 @@ public class Luong_7_TBA_game {
     static String enter;
     static String strings;
     static String fdoor;
+    static String direction;
+    static int health;
     static Scanner responses  = new Scanner(System.in); //this is the scanner for all the responses in the game.
     static boolean items;
     static boolean spells;
     static boolean door;
-    static Scanner next = new Scanner(System.in);
+    static boolean gameplay;
+    static Scanner next = new Scanner(System.in); // this is used to let the player press the enter key to continue
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         intro();
+        }
+    
+    
+    static void intro() {
         System.out.println("Welcome to ABANDONED SPELLS. What is your name?");
         Scanner userinputname = new Scanner(System.in);
         username = userinputname.nextLine();
+        System.out.println(username + " here is a reminder...When you don't see text appear, press enter, this game will force you to read ");
+        System.out.println("INSTRUCTIONS!!!!");
         System.out.println(username + ", you had a depressing day today and was seeking refuge in an abandoned house, so you could ");
         System.out.println("be alone, comforted by the isolation of the outside world.");
         System.out.println("You had a lot of fun in the house, discovering hidden secrets that was forbidden to know. ");
@@ -36,29 +46,189 @@ public class Luong_7_TBA_game {
         System.out.println("Choose which door you would want to go through. Door 1 or Door 2.");
         Scanner choose = new Scanner(System.in);
         fdoor = choose.nextLine();
-     
         if(fdoor.contains("1")) {
             door = true;
         }else {
             door = false;
         }
             if(door) {
-                Door1();
+                Door1intro();
            }else {
                 Door2();
             }
-         
-}
-       static void Door1() {
+    }
+       static void Door1intro() {  //challenge 1
            System.out.println("You are now currently in the living room...It is probably safe.");
            System.out.println("Do you agree?");
            String response;
-           responses= response.nextLine();
-
+           response = responses.nextLine();
+           System.out.println("YOU're WRONG...The creatures are chasing you. Navigate your way in the dark");
+           System.out.println("and use your spells to destroy the enemies.");
+           System.out.println("Press enter to continue...");
+           enter = next.nextLine();
+           System.out.println(username + " Use your fire spell to disintegrate your enemy");
+           System.out.println("Use your ice spell to freeze your opponents");
+           System.out.println("Use your brain to navigate through this dark arena... ");
+           System.out.println("Are you ready?");
+           enter = next.nextLine();
+           Door1challenge();
        }
+       
+       static void Door1challenge() {
+           
+           System.out.println("Ready. 3...2...1...GO!");
+           System.out.println("Where do you want to go? Left, Right, or Straight");
+           direction = next.nextLine();
+           //this is where the player will decide where to go
+           //the rest of the maze will branch off from this decision. These choices will have the same outcome.
+           
+               if(direction.contains("left")) {
+                   door1challenge_leftpath();
+                   
+           }else if(direction.contains("right")){
+                    System.out.println("Oh NO!!!! You fell into the pit.");
+                    backtocheckpoint1(); //this will bring the player back to the beginning of the challenge
+           }else{
+               door1challenge_straightpath();
+           }
+               
+           
+           
+           
+       }
+       
+       static void door1challenge_leftpath() {
+           System.out.println("You met a creature! Use your powers to defeat it.");
+            //This will go to a different section of the game with a left path.
+            //after you defeat the creature
+            System.out.println(username + ", You defeated the beast");
+            enter = next.nextLine();
+            System.out.println("Now there is a straight path ahead and a curved path to the right.");
+            System.out.println("Which way do you want to go. Straight or right?");
+            direction = next.nextLine();
+             //part 2 wave
+                if(direction.contains("straight")) {
+                        System.out.println("You met another creature! Use your powers to defeat the creature");
+                        //after you beat the creature
+                        System.out.println(username + ", you defeated the beast...you're on a roll!");
+                        enter = next.nextLine();
+                        System.out.println("Now there is a path directing you forward and a path directing you to the left");
+                        System.out.println("Which path way would you like to pass? Left or straight?");
+                        direction = next.nextLine();
+                        if(direction.contains("left")) {
+                            System.out.println("Oh NO!!! You fell in the trap.");
+                            backtocheckpoint1();
+                     
+                            }else{
+                                System.out.println("Looks like it is a safe path. Look there is only a path leading");
+                                System.out.println("to the left. Shall we take that path?");
+                                answer = responses.nextLine();
+                                if(answer.contains("yes")) {
+                                       System.out.println("You met another creature! Defend yourself!");
+                                       //after you beat the creature
+                                       System.out.println("Great job " + username + ", you defeated the creature!");
+                                       enter = next.nextLine();
+                                       door1challenge_commonpath();
+                            }
+                        }
+                         
+                    }else { //going right (linked path)
+                        System.out.println("You met another creature! Use your powers to defeat the creature");
+                        //after you beat it
+                        System.out.println(username + ", you defeated the beast...you're on a roll!");
+                        enter = next.nextLine();
+                        System.out.println("Here is another tough choice...There are two diverging paths, do");
+                        System.out.println("you want to take the right or the straight path");
+                        direction = next.nextLine();
+                            if(direction.contains("right")) {
+                                System.out.println("Oh No!!! You fell into the pit!");
+                                backtocheckpoint1();
+                            }else if(direction.contains("straight")) {
+                                System.out.println("Here is another creature." + username + "get ready to exterminate it");
+                                //after winning
+                                System.out.println("Great job, you're a pro");
+                                enter = next.nextLine();
+                                door1challenge_commonpath();
+                                
+                            }
+                        }
+       }
+       
+       static void door1challenge_straightpath() {
+            System.out.println("It looks safe...There is a straight path ahead. Press enter to continue.");
+            enter = next.nextLine();
+            //next choice
+            System.out.println("looks like you're still safe...continue ahead or turn to the right and use that path?");
+            direction = next.nextLine();//this is where you chose which way to go...also a linked path.
+                 if(direction.contains("right")) {
+                        System.out.println("Oh NO!!! You fell in the trap!");
+                        backtocheckpoint1();
+                        
+                        } else{
+                            System.out.println("Creature encountered... Fight this creature to continue.");
+                            //after winning
+                            System.out.println("You beat the creature!");
+                            enter = next.nextLine();
+                            //this next path is a linked path too.
+                            System.out.println("Now, you can either go straight or take the right route.");
+                            System.out.println("Which one do you want to go through: the right or the straight path?");
+                            direction = next.nextLine();
+                                if(direction.contains("right")) {
+                                    System.out.println("OH NO " + username + ". You fell into the pit");
+                                    backtocheckpoint1();
+                                } else {
+                                    door1challenge_commonpath();
+                                }
+                        }
+                }
+    
+       
        
        static void Door2() {
            System.out.println("bye");
        }
+       
+       static void backtocheckpoint1() {
+           System.out.println("You came back to the main entrance of challenge 1...Are you ready to restart this challenge?");
+           strings = responses.nextLine();
+           Door1challenge();
+       }
+       
+       static void door1challenge_commonpath() {
+            System.out.println("You completed the first task. Take the red key on the table.");
+            System.out.println("Use it to unlock the next door.");
+            enter = next.nextLine();
+            enddoor1survey();//this is when you finish the task
+           
+       }
+       
+       static void enddoor1survey() {
+           System.out.println("The small creatures that you have just encountered is just an introduction to your quest.");
+           System.out.println("How do you feel about this? Good or bad?");
+           answer = responses.nextLine();
+           //talk about the keys
+           if(answer.contains("good")) {
+               System.out.println("Well " + username + ", you are going to like the rest of this journey.");
+               redkeys_unlock();
+           }else if(answer.contains("bad")) {
+               System.out.println("Sucks for you, it was you that decided to read the spell book in the first place.");
+               redkeys_unlock();
+           }else{
+               System.out.println("I don't understand...can you say that one more time?");
+               enddoor1survey();
+           }
+       }
+       
+       static void redkeys_unlock() {
+           System.out.println(username + ", you now have the keys to unlock the doors to continue on. Hurry before they catch you!");
+           System.out.println("You see a massive gate...Do you want to check it out?");
+           answer = responses.nextLine();
+           if(answer.contains("yes")) {
+               System.out.println("The door seems to be locked...");
+               System.out.println("perhaps you should use your red key and see what happens.");
+               //red keys will allow you to go to challenge 1B
+           }
+       }
+       
 }
-        
+       
