@@ -10,8 +10,9 @@ public class Luong_7_TBA_game {
     static String strings;
     static String fdoor;
     static String direction;
-    static String answer;
-    static int playerhealth;
+    static String answer; // this is used to let the player respond to yes and no questions
+    static String attack;
+    static int playerhealth=100;
     static int monsterhealth;
     static int zero = 0;
     static Scanner responses  = new Scanner(System.in); //this is the scanner for all the responses in the game.
@@ -29,20 +30,45 @@ public class Luong_7_TBA_game {
          intro();
     } 
     
-    static void player_fights() { //player fighting
+    static void player_fights() { //method that introduces the fighting in challenge 1 
         monsterisalive = true;
-        while(monsterisalive) {
-            if(monsterhealth <= zero) {
-                monsterisalive = false;
-            }else{
-                monsterisalive = true;
-            }
+        monsterhealth=50;
+        do {
+          
+            if(monsterisalive = true){
+                System.out.println("Use you spells to defeat your enemies...");
+                System.out.println("Which attack do you want to use? Fire Spell, Ice Spell, or run");
+                attack = next.nextLine();
+                if(attack.contains("f")) {
+            System.out.println(username + " uses his fire spell...FOOOSH!!!");
+            enter = next.nextLine();
+            System.out.println("The monster lost 30 HP");
+            enter = next.nextLine();
+            monsterhealth = monsterhealth-30;
+        }else if(attack.contains("i")) {
+            System.out.println(username + " uses his ice spell...GHAAAA!!!");
+            enter = next.nextLine();
+            System.out.println("The monster loses 20 HP");
+            enter = next.nextLine();
+            monsterhealth = monsterhealth-20;
+        }else{
+            System.out.println(username + " there's no turning back");
             
-        }       
+        }
+            }
+            //make sure that this if statement is outside the main if statement that introduces the do while loop
+            //location matters, not following this formula will keep cycling through this method without ever continuing the main story
+            
+              if(monsterhealth == zero) {
+                monsterisalive = false;
+                System.out.println("afdas");
+            }
+        }while(monsterisalive);      
     }
+          
+    
     
     static void intro() {
-        player_fights();
         System.out.println("Welcome to ABANDONED SPELLS. What is your name?");
         Scanner userinputname = new Scanner(System.in);
         username = userinputname.nextLine();
@@ -109,14 +135,11 @@ public class Luong_7_TBA_game {
            }else{
                door1challenge_straightpath();
            }
-               
-           
-           
-           
        }
        
        static void door1challenge_leftpath() {
            System.out.println("You met a creature! Use your powers to defeat it.");
+           player_fights();
             //This will go to a different section of the game with a left path.
             //after you defeat the creature
             System.out.println(username + ", You defeated the beast");
@@ -127,6 +150,7 @@ public class Luong_7_TBA_game {
              //part 2 wave
                 if(direction.contains("straight")) {
                         System.out.println("You met another creature! Use your powers to defeat the creature");
+                        player_fights();
                         //after you beat the creature
                         System.out.println(username + ", you defeated the beast...you're on a roll!");
                         enter = next.nextLine();
@@ -143,6 +167,7 @@ public class Luong_7_TBA_game {
                                 answer = responses.nextLine();
                                 if(answer.contains("yes")) {
                                        System.out.println("You met another creature! Defend yourself!");
+                                       player_fights();
                                        //after you beat the creature
                                        System.out.println("Great job " + username + ", you defeated the creature!");
                                        enter = next.nextLine();
@@ -152,6 +177,7 @@ public class Luong_7_TBA_game {
                          
                     }else { //going right (linked path)
                         System.out.println("You met another creature! Use your powers to defeat the creature");
+                        player_fights();
                         //after you beat it
                         System.out.println(username + ", you defeated the beast...you're on a roll!");
                         enter = next.nextLine();
@@ -163,6 +189,7 @@ public class Luong_7_TBA_game {
                                 backtocheckpoint1();
                             }else if(direction.contains("straight")) {
                                 System.out.println("Here is another creature." + username + "get ready to exterminate it");
+                                player_fights();
                                 //after winning
                                 System.out.println("Great job, you're a pro");
                                 enter = next.nextLine();
@@ -259,7 +286,7 @@ public class Luong_7_TBA_game {
        
        
        static void portal_introduction() {
-           System.out.println("There are two portals that obviouslylead to different");
+           System.out.println("There are two portals that obviously lead to different");
        }
        
        static void portal_denied() {
