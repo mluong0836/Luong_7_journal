@@ -12,7 +12,7 @@ public class Luong_7_TBA_game {
     static String direction;
     static String answer; // this is used to let the player respond to yes and no questions
     static String attack;
-    static int playerhealth=100;
+    static int playerhealth;
     static int monsterhealth;
     static int zero = 0;
     static Scanner responses  = new Scanner(System.in); //this is the scanner for all the responses in the game.
@@ -33,6 +33,7 @@ public class Luong_7_TBA_game {
     static void player_fights() { //method that introduces the fighting in challenge 1 
         monsterisalive = true;
         monsterhealth=50;
+
         do {
           
             if(monsterisalive = true){
@@ -44,29 +45,41 @@ public class Luong_7_TBA_game {
             enter = next.nextLine();
             System.out.println("The monster lost 30 HP");
             enter = next.nextLine();
-            monsterhealth = monsterhealth-30;
+            monsterhealth = monsterhealth-30;            
         }else if(attack.contains("i")) {
             System.out.println(username + " uses his ice spell...GHAAAA!!!");
             enter = next.nextLine();
             System.out.println("The monster loses 20 HP");
             enter = next.nextLine();
-            monsterhealth = monsterhealth-20;
+            monsterhealth = monsterhealth-20;                  
         }else{
             System.out.println(username + " there's no turning back");
             
         }
             }
-            //make sure that this if statement is outside the main if statement that introduces the do while loop
-            //location matters, not following this formula will keep cycling through this method without ever continuing the main story
+            /*make sure that this if statement is outside the main if statement that introduces the do while loop
+           location matters, not following this formula will keep cycling through this method without ever continuing the main story */
             
               if(monsterhealth == zero) {
                 monsterisalive = false;
-                System.out.println("afdas");
-            }
+                //condition that will exit the while loop and return back to the main game
+                  System.out.println("You won");
+            }else if(monsterisalive = true){ 
+                
+                /*I placed the if statement for the monster here so it won't interfere with the player's fighting
+                //if you were to place this statement somewhere inside if(monsterisalive = true), you would keep going
+                until it is done going over the entire battle play*/
+                
+                    System.out.println("It's the monster's turn...Be prepared!");
+                    System.out.println("The monster engulfs you in a dark portal and throws you back out!");
+                    enter = next.nextLine();
+                    System.out.println("OUCH!!! You lose 10 HP!");
+                    enter = next.nextLine();
+                    playerhealth = playerhealth-10;
+                }
+             
         }while(monsterisalive);      
-    }
-          
-    
+    }   
     
     static void intro() {
         System.out.println("Welcome to ABANDONED SPELLS. What is your name?");
@@ -286,7 +299,19 @@ public class Luong_7_TBA_game {
        
        
        static void portal_introduction() {
-           System.out.println("There are two portals that obviously lead to different");
+           System.out.println("There are two portals that obviously lead to different paths.");
+           enter = next.nextLine();
+           System.out.println("You learned that in order to be teleported you must repeat a line and jump into the portal");
+           System.out.println("Are you ready?");
+           answer = next.nextLine();
+           if(answer.contains("no")) {
+               System.out.println("There's no turning back, you must go now!");
+           }else if(answer.contains("yes")) {
+               System.out.println("Alright...Which portal would you like to go through?");
+               System.out.println("The Yellow or Red one");
+           }else{
+               portal_introduction();
+           }
        }
        
        static void portal_denied() {
