@@ -7,7 +7,7 @@ package luong_7_tba_game;
 public class Luong_7_TBA_game {
     static String username;
     static String enter;
-    static String strings;
+    static String strings; // used to reply when the player fails a challenge
     static String fdoor;
     static String direction;
     static String answer; // this is used to let the player respond to yes and no questions
@@ -30,9 +30,9 @@ public class Luong_7_TBA_game {
          intro();
     } 
     
-    static void player_fights() { //method that introduces the fighting in challenge 1 
+    static void player_fights() { //method that introduces the fighting in challenge 1 of both versions
         monsterisalive = true;
-        monsterhealth=50;
+        monsterhealth = 50;//this is a level one monster
 
         do {
           
@@ -66,11 +66,12 @@ public class Luong_7_TBA_game {
                   System.out.println("You won");
             }else if(monsterisalive = true){ 
                 
-                /*I placed the if statement for the monster here so it won't interfere with the player's fighting
+                /* I placed the if statement for the monster here so it won't interfere with the player's fighting
                 //if you were to place this statement somewhere inside if(monsterisalive = true), you would keep going
-                until it is done going over the entire battle play*/
+                until it is done going over the entire battle play. */
                 
                     System.out.println("It's the monster's turn...Be prepared!");
+                    enter = next.nextLine();
                     System.out.println("The monster engulfs you in a dark portal and throws you back out!");
                     enter = next.nextLine();
                     System.out.println("OUCH!!! You lose 10 HP!");
@@ -109,7 +110,7 @@ public class Luong_7_TBA_game {
             if(door) {
                 Door1intro();
            }else {
-                Door2();
+                Door2_intro();
             }
     }
        static void Door1intro() {  //challenge 1
@@ -242,8 +243,72 @@ public class Luong_7_TBA_game {
     
        
        
-       static void Door2() {
-           System.out.println("bye");
+       static void Door2_intro() {
+           System.out.println("You are now currently in the basement ...It is probably safe.");
+           System.out.println("Besides...who would think of hiding in the basement anyways?");
+           System.out.println("Do you agree?");
+           //String response;
+           answer = next.nextLine();
+           System.out.println("YOU're WRONG...The creatures are chasing you. Navigate your way in the dark");
+           System.out.println("and use your spells to destroy the enemies.");
+           System.out.println("Press enter to continue...");
+           enter = next.nextLine();
+           System.out.println(username + " Use your fire spell to disintegrate your enemy");
+           System.out.println("Use your ice spell to freeze your opponents");
+           System.out.println("Use your brain to navigate through this dark arena... ");
+           System.out.println("Are you ready for the challenge?");
+           answer = next.nextLine();
+           if(answer.contains("yes")){
+               Door1challenge();
+           }else if(answer.contains("no")) {
+               System.out.println("Too bad!!! There's no other way out of this mess. Go kick some monster's behind!");
+               Door2challenge();
+       }else{
+               Door2_intro();
+           }
+       }
+       
+       static void Door2challenge() { //This is where the second variation of the first challenge arrives
+           System.out.println("Ready! 3...2...1...GO!");
+           System.out.println("Where do you want to go? Left, Right, or Straight");
+           direction = next.nextLine();
+           //this is where the player will decide where to go
+           //the rest of the maze will branch off from this decision. These choices will have the same outcome.
+           
+               if(direction.contains("left")) {
+                   door2challenge_leftpath();
+                   //player enters the left branch
+                   
+           }else if(direction.contains("right")){
+                    door2challenge_rightpath();
+                    //player enters the right branch
+                    
+           }else if(direction.contains("straight")){
+               door2challenge_straightpath();
+               //player enters the straight branch
+           }else{
+               System.out.println("I don't understand...type it correctly!!!");
+               Door2challenge();
+           }
+           
+       }
+       
+       static void door2challenge_leftpath() {
+           System.out.println("The area looks safe... Continue on " + username + " on the straight path ahead.");
+           System.out.println("You met a creature! Get ready to FIGHT!");
+           enter = next.nextLine();
+           player_fights();
+           //when you defeat the creature
+           System.out.println(username + ", You defeated the beast");
+           System.out.println("Continue on...");
+           enter = next.nextLine();
+           System.out.println("There is now only a curved path ahead... Take that path now.");
+           System.out.println("OH NO... It was a trap. You fell into molten lava");
+           backtocheckpoint1();  
+}
+       
+       static void door2challenge_rightpath() {
+           
        }
        
        static void backtocheckpoint1() {
