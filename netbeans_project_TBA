@@ -1,5 +1,6 @@
 package luong_7_tba_game;
     import java.util.Scanner;
+    import java.util.Random;
 /**
  *
  * @author mluong
@@ -82,7 +83,7 @@ public class Luong_7_TBA_game {
         }while(monsterisalive);      
     }   
     
-    static void intro() {
+    static void intro() { //This is where you would here the story line
         System.out.println("Welcome to ABANDONED SPELLS. What is your name?");
         Scanner userinputname = new Scanner(System.in);
         username = userinputname.nextLine();
@@ -300,21 +301,82 @@ public class Luong_7_TBA_game {
            player_fights();
            //when you defeat the creature
            System.out.println(username + ", You defeated the beast");
-           System.out.println("Continue on...");
+           System.out.println("Continue on..."); 
+           //There is a straight path up ahead that the player will take to advance
            enter = next.nextLine();
            System.out.println("There is now only a curved path ahead... Take that path now.");
            System.out.println("OH NO... It was a trap. You fell into molten lava");
-           backtocheckpoint1();  
+           enter = next.nextLine();
+           backtocheckpoint1_version2();  //Dead end...Will return back to the first challenge second version
 }
        
        static void door2challenge_rightpath() {
+           System.out.println("YOu met a creature...");
+           System.out.println("Get ready to RIP!!!");
+           player_fights();
+           //after you beat the creature...
+           System.out.println("You killed it!!! " + username + "You are on a roll!");
+           enter = next.nextLine();
+           System.out.println("There is a straight path ahead take the path and continue to survive long enough to escape the creatures");
+           System.out.println("grasp...");
+           enter = next.nextLine();
+           //when you take that straight path...
+           System.out.println("It looks safe here... Shall we continue?");
+           answer = responses.nextLine();
+           //Choice doesn't matter...you still have to continue
+           System.out.println("No time to think " + username + " the creatures are behind you...run");
+           enter = next.nextLine();
+           System.out.println("There are two diverging paths. Do you want to take the left or the right path?");
+           answer = next.nextLine();
+           if(answer.contains("left")) {
+               System.out.println("You met a creature!");
+               System.out.println(username + ", prepare yourself...");
+               enter = next.nextLine();
+               player_fights();
+               //after you beat the monster you will go into another method which is a linked path...
+               System.out.println("Congratulations you beat the monster"); {
+               door2_linkedpath(); //this is the linked path with the straight path branch.
+           }
+           }else if (answer.contains("right")) {
+               System.out.println("OH NO!!!" + username + " fell into the hole with razor sharp knives ");
+               backtocheckpoint1_version2();
+               
+           }else{ //in case if the player mistypes the code, they will be punished by getting dragged back to an earlier checkpoint
+               System.out.println(username +" Please retype your response correctly. ");
+               System.out.println("There is no horse playing at a time like this... ");
+               System.out.println("The monsters dragged you back...Luckily you escaped");
+               enter = next.nextLine();
+               System.out.println("Looks like you're back to the place where you just made your decision of taking the right path");
+               door2challenge_rightpath(); 
+           }
+               
+           
+       }
+       
+       static void door2_linkedpath() {
            
        }
        
        static void backtocheckpoint1() {
+           //Back to check point one version 1
            System.out.println("You came back to the main entrance of challenge 1...Are you ready to restart this challenge?");
            strings = responses.nextLine();
            Door1challenge();
+       }
+       
+       static void backtocheckpoint1_version2() {
+           //Back to check point one version 2
+           System.out.println("You arrived to the main entrance of challenge 1... Are you ready to restart this challenge?");
+           strings = responses.nextLine();
+           if (strings.contains("n")) {
+               System.out.println("It's not an option"); 
+               backtocheckpoint1_version2();
+           }else if (strings.contains("y")) { 
+               Door2challenge();
+           }
+                   
+                  
+           
        }
        
        static void door1challenge_commonpath() {
