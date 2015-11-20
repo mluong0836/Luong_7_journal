@@ -6,7 +6,7 @@ package luong_7_tba_game;
  * @author mluong
  */
 public class Luong_7_TBA_game {
-     static String username;
+    static String username;
     static String enter;
     static String strings; // used to reply when the player fails a challenge
     static String fdoor;
@@ -15,9 +15,13 @@ public class Luong_7_TBA_game {
     static String attack;
     static Random arenafight_r = new Random ();//this will randomly select different leveled monkeys in red portal version
     static Random arenafight_y = new Random ();//this wil randomly select different leveld monkeys in yellow portal version
+    static int monsterchoices_y_r; //This is the numbers that will be selected in the random monster generator in yellow portal version
     static int playerhealth;
-    static int monsterhealth;
+    static int monsterhealth;//this is the monster's health for challenge 1...challenge 2 will be more complicated so I have to make another health bar
     static int zero = 0;
+    static int spiderhealth;// This is the enemy that you have to defeat when the random generator spits out number 1
+    static int goblinshealth;// This is the second type of enemy the player can encounter in yellow portal version
+    static int golbathealth;// This is the third type of enemy one can encounter as the player and Separt attempts to defeat 
     static Scanner responses  = new Scanner(System.in); //this is the scanner for all the responses in the game.
     static boolean items;
     static boolean spells;
@@ -94,9 +98,27 @@ public class Luong_7_TBA_game {
     }   
     
     static void yellow_fight () { //This is the method to allow randomly selected monsters to fight the player and Separt
+        monsterchoices_y_r = arenafight_y.nextInt(5);
+        monsterhealth = 150;
+        playerhealth = 500; // player leveled up to level 5 with 500 HP
+        if (monsterchoices_y_r == 1 ) {
+            System.out.println("You encountered a giant spider with " + spiderhealth + " health");
+            spider_fight();
+        }else if(monsterchoices_y_r == 2) {
+            System.out.println("YOu encountered a goblin with " + goblinshealth + " health");
+            goblin_fights();    
+    }else if(monsterchoices_y_r == 3) {
+            System.out.println("YOu encountered a golbat with " + golbathealth + " health");
+            golbat_fight();
+    }
         
     }
     
+    static void spider_fight() {
+        enter = next.nextLine();
+        System.out.println("You ");
+        
+    }
     static void red_fight() { //This is the method to randomly select monkeys to fight the player and Kongo
         
     }
