@@ -1,6 +1,6 @@
 1. I was very successful with my game because I was able to create a multiple randoms, fighting methods, and a variety of methods that were able to works together in unison.
    In addition, I felt like I now have a better understanding on while loops, if and else if statements, booleans, multiple classes, an object, randoms, and scanners.
 
-2. Like I have just said, I was able to buil;d upon small elements such as scanners, strings, and ints, to form more complex elements such as a random that uses both ints and
+2. Like I have just said, I was able to build upon small elements such as scanners, strings, and ints, to form more complex elements such as a random that uses both ints and
    scanners. Furthermore, I mastered the use of if and else if statements, the backbone of my game. I also have mastered while loops and even learned the function of a do-while,
    objects such as audioclass pl = new audioclass; to use the methods from different class in my main program.

@@ -1,0 +1,6 @@
+1.  Yes, I was successfull because I finished my game without any errors that were too dificult
+    to fix. In addition, I felt like this interactive fiction project has strengthened my ability
+    to use for/if/else statements and effective use of randoms to generate monsters, attacks, misses, 
+    and critical hits. Furthermore, I successfully completed 2500 lines of codes right on time and
+    was able to add some extra components such as class, objects, and a music file in a wav format.
+    All in all, I was extremely successfully in that I was able to build upon my CS skills.
