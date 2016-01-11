@@ -1,0 +1,4 @@
+1. A slick game that I was planning to make was a fighting game that would occur in a maze like setting. So, it involves your thinking while fighting.
+
+2.Some challenges that I have faced included making a working object, which I have resolved already. Another challenge that I am currently solving is how to add small music
+  files. Furthermore, another problem was related to the enemy class and how I would move the enemies opposite of the player, since my enemy currently follows the player.
