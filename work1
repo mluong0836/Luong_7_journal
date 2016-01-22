@@ -88,7 +88,8 @@ public class Unwavering extends BasicGameState {
     public static int counter = 0;
 
     // Player stuff
-    private Animation sprite, up, down, left, right, wait, attackfrom_right, attackfrom_left, attackfrom_up, attackfrom_down;
+    private Animation sprite, up, down, left, right, wait, attackfrom_right, attackfrom_left, attackfrom_up, 
+                      attackfrom_down, hurt;
 
     /**
      *
@@ -117,7 +118,7 @@ public class Unwavering extends BasicGameState {
 
 		// *******************
         
-        grassMap = new TiledMap("res/Luong_5_dungeon_home2.tmx");
+        grassMap = new TiledMap("res/Luong_5_dungeon_home3.tmx");
 
         // Ongoing checks are useful
         System.out.println("Tile map is this wide: " + grassMap.getWidth());
@@ -138,13 +139,13 @@ public class Unwavering extends BasicGameState {
 
         up.setAutoUpdate(true);
 
-        up.addFrame(runningSS.getSprite(0, 8), 330);
+        up.addFrame(runningSS.getSprite(0, 1), 330);
 
-        up.addFrame(runningSS.getSprite(1, 8), 330);
+        up.addFrame(runningSS.getSprite(1, 1), 330);
 
-        up.addFrame(runningSS.getSprite(2, 8), 330);
+        up.addFrame(runningSS.getSprite(2, 1), 330);
 
-        up.addFrame(runningSS.getSprite(3, 8), 330);
+        up.addFrame(runningSS.getSprite(3, 1), 330);
 
         up.addFrame(runningSS.getSprite(4, 8), 330);
 
@@ -243,6 +244,7 @@ public class Unwavering extends BasicGameState {
 
         attackfrom_right.setAutoUpdate(true);
         
+        
         attackfrom_right.addFrame(runningSS.getSprite(1, 31), 130);
 
         attackfrom_right.addFrame(runningSS.getSprite(4, 31), 130);
@@ -253,7 +255,7 @@ public class Unwavering extends BasicGameState {
         
         attackfrom_right.addFrame(runningSS.getSprite(13, 31), 130);  
         
-        attackfrom_right.addFrame(runningSS.getSprite(16, 31), 130);
+        attackfrom_right.addFrame(runningSS.getSprite(16, 31), 130);       
         
         // sprite facing left
         attackfrom_left = new Animation();
@@ -303,6 +305,18 @@ public class Unwavering extends BasicGameState {
         attackfrom_up.addFrame(runningSS.getSprite(13, 22), 130);  
         
         attackfrom_up.addFrame(runningSS.getSprite(16, 22), 130);
+        
+        //when hurt
+        hurt = new Animation();
+        
+        hurt.addFrame(runningSS.getSprite(0, 20), 230);
+
+        hurt.addFrame(runningSS.getSprite(1, 20), 230);
+
+        hurt.addFrame(runningSS.getSprite(2, 20), 230);
+        
+        hurt.addFrame(runningSS.getSprite(3, 20), 130);
+
 
 		
 
@@ -325,7 +339,8 @@ public class Unwavering extends BasicGameState {
 
             for (int yAxis = 0; yAxis < grassMap.getHeight(); yAxis++) {
 
-				// int tileID = grassMap.getTileId(xAxis, yAxis, 0);
+				 //int tileID = grassMap.getTileId(xAxis, yAxis, 0);
+                
                 // Why was this changed?
                 // It's a Different Layer.
                 // You should read the TMX file. It's xml, i.e.,human-readable
@@ -420,7 +435,7 @@ public class Unwavering extends BasicGameState {
 
         // it helps to add status reports to see what's going on
         // but it gets old quickly
-        // System.out.println("Current X: " +player.x + " \n Current Y: "+ y);
+        System.out.println("Current X: " +Player.x + " \n Current Y: "+ Player.y);
         Image s5 = new Image("res/s5.png");
         Image s7 = new Image("res/s7.png");
         Image wall_right_light = new Image("res/0160_wall_right_light.bmp");
@@ -458,12 +473,17 @@ public class Unwavering extends BasicGameState {
         sprite.draw((int) Player.x, (int) Player.y);
 
         //g.drawString("x: " + (int)player.x + "y: " +(int)player.y , player.x, player.y - 10);
-        g.drawString("Health: " + Player.health / 1000, camera.cameraX + 10,
-                camera.cameraY + 10);
+        //g.drawString("Health: " + Player.health / 1000, camera.cameraX + 10,
+               // camera.cameraY + 10);
 
         g.drawString("speed: " + (int) (Player.speed * 10), camera.cameraX + 10,
                 camera.cameraY + 25);
-
+        
+        //g.drawString(Current X: " + Player.x + "  Current Y: "+ Player.y));
+        //Current X: " +Player.x + " \n Current Y: "+ Player.y
+        g.drawString("Current X: " + Player.x , camera.cameraX + 10, camera.cameraY + 10);
+        
+        g.drawString("Current Y: " + Player.y, camera.cameraX + 30, camera.cameraY + 30);
         //g.draw(player.rect);
         g.drawString("time passed: " + counter / 1000, camera.cameraX + 600, camera.cameraY);
         // moveenemies();
