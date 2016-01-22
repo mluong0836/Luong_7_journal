@@ -53,6 +53,7 @@ public class Unwavering extends BasicGameState {
     public Item healthpotion, healthpotion1;
     public Item1 speedpotion, speedpotion1;
     public Itemwin antidote;
+    public Blue bluekey;
 
     public Ninja stormy, daniel, sword;
 
@@ -60,6 +61,8 @@ public class Unwavering extends BasicGameState {
     //first public enemy
 
     public ArrayList<Item> stuff = new ArrayList();
+    
+    public ArrayList<Blue> unlock1 = new ArrayList();
 
     public ArrayList<Item1> stuff1 = new ArrayList();
 
@@ -77,8 +80,7 @@ public class Unwavering extends BasicGameState {
      boolean direction_left;
      boolean direction_up;
      boolean direction_down;
-    
-
+     
     private static TiledMap grassMap;
 
     private static AppGameContainer app;
@@ -118,7 +120,7 @@ public class Unwavering extends BasicGameState {
 
 		// *******************
         
-        grassMap = new TiledMap("res/Luong_5_dungeon_home3.tmx");
+        grassMap = new TiledMap("res/Luong_5_dungeon_home2.tmx");
 
         // Ongoing checks are useful
         System.out.println("Tile map is this wide: " + grassMap.getWidth());
@@ -403,6 +405,8 @@ public class Unwavering extends BasicGameState {
         stormy = new Ninja(0, 0);
         daniel = new Ninja(600, 254);
         sword = new Ninja(124, 254);
+        bluekey = new Blue(424,265);
+        unlock1.add(bluekey);
         dojo.add(stormy);
         dojo.add(daniel);
         dojo.add(sword);
@@ -545,6 +549,28 @@ public class Unwavering extends BasicGameState {
                 w.currentImage.draw(w.x, w.y);
                 // draw the hitbox
                 //g.draw(w.hitbox);
+
+            }
+        }
+        
+        for (Blue b : unlock1) { //stage1
+            if (b.isvisible) {
+                b.currentImage.draw(b.x, b.y);
+                // draw the hitbox
+                //g.draw(i.hitbox);
+
+            }
+        }
+        
+        for (Blue b : unlock1) {
+
+            if (Player.rect.intersects(b.hitbox)) {
+                //System.out.println("yay");
+                if (b.isvisible) {
+
+                    Player.speed += .1f;
+                    b.isvisible = false;
+                }
 
             }
         }
