@@ -1,0 +1,6 @@
+1. By trying to create a new unique game that didn't involve timers nor a maze built game, this hindered most of my progress.
+   However, through experimenting with new ideas and concepts nad going abroad, I learned new things, such as stoping animations
+   in the middle of its frames, pondering over how to change blocked properties to unblock, how to specify where the player
+   can go until a certain type of object is taken up, and how to make an authentic enemy; one that a player would experience
+   in a final boss play. This means coding my boss to be extremely smart in its attacks, movements, etc... So, by trying 
+   to accomplish these tasks, I learned more while taking more time. 
