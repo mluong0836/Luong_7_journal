@@ -1,0 +1,15 @@
+1. I created a stage battling rpg game in which players fight enemies and diverge through pathways and traps to win and defeat
+   the final boss, similar to final fantasy.
+   
+2. Some challeges that I have solved included making blocked property works, adding effeciently new objects, moving enemies, 
+   animating spritesheets, enforcing prior knowledge on for loops and its wonderful uses for arraylists and classses. In addition,
+   classes became easier to create as understanding objects and methods by using e._ to grap a method from a different class or
+   arraylist.
+   
+3. I was able to create a beautiful tiledmap over the winter break. I installed the slick and lwgl programs that Mr. Davis linked
+   and prepared my map beforehand. This enabled me to try newer concepts and ideas.
+   
+4. No, I was not able to meet the timeline because of my procrastination on minor details. I want an authentic game that is unique,
+   not a game that is already built off of. Some classmates were "recreating mazes" but I found that in my interest I wanted to
+   diverge from this code and create one that I felt that would satisfy my end game.I am slowly making progress, but the progress
+   are huge so you won't regret waiting.
