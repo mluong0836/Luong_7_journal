@@ -53,7 +53,11 @@ public class Unwavering extends BasicGameState {
     public Item healthpotion, healthpotion1;
     public Item1 speedpotion, speedpotion1;
     public Itemwin antidote;
-    public Blue bluekey;
+    public Blue bluekey;//class for blue keys
+    public Yellow yellowkey;//class for yellowkeys
+    public Green greenkey;//class for greenkeys
+    public Pink pinkkey; //class for pinkkeys
+    public Finalitem lastitem;//last item last bluekey
 
     public Ninja stormy, daniel, sword;
 
@@ -63,6 +67,10 @@ public class Unwavering extends BasicGameState {
     public ArrayList<Item> stuff = new ArrayList();
     
     public ArrayList<Blue> unlock1 = new ArrayList();
+    public ArrayList<Yellow> unlock2 = new ArrayList();
+    public ArrayList<Green> unlock3 = new ArrayList();
+    public ArrayList<Pink> unlock4 = new ArrayList();
+    public ArrayList<Finalitem> unlock5 = new ArrayList();
 
     public ArrayList<Item1> stuff1 = new ArrayList();
 
@@ -71,6 +79,7 @@ public class Unwavering extends BasicGameState {
     public ArrayList<Ninja> dojo = new ArrayList();
 
     public ArrayList<Enemy> bonez = new ArrayList();
+    
 
     private boolean[][] hostiles;
     
@@ -120,7 +129,7 @@ public class Unwavering extends BasicGameState {
 
 		// *******************
         
-        grassMap = new TiledMap("res/Luong_5_dungeon_home2.tmx");
+        grassMap = new TiledMap("res/Luong_5_dungeon_home3.tmx");
 
         // Ongoing checks are useful
         System.out.println("Tile map is this wide: " + grassMap.getWidth());
@@ -405,11 +414,20 @@ public class Unwavering extends BasicGameState {
         stormy = new Ninja(0, 0);
         daniel = new Ninja(600, 254);
         sword = new Ninja(124, 254);
-        bluekey = new Blue(424,265);
-        unlock1.add(bluekey);
         dojo.add(stormy);
         dojo.add(daniel);
         dojo.add(sword);
+        
+        bluekey = new Blue(1412,755); //this is the blue key that will be visible when enemy dies
+        yellowkey = new Yellow(160, 1274); //this is the yellow key that will be visible when enemy dies
+        greenkey = new Green(160, 1274); //this is the green key that will be visible when enemy dies
+        pinkkey = new Pink(160, 2278); //this is the pink key that will be visible when enemy dies
+        lastitem = new Finalitem(200, 500); //this is the final blue key that will be visible when enemy dies
+        unlock1.add(bluekey); 
+        unlock2.add(yellowkey);
+        unlock3.add(greenkey);
+        unlock4.add(pinkkey);
+        unlock5.add(lastitem);
 
         flava = new Enemy(300, 300);
         flav = new Enemy(256, 256);
@@ -574,6 +592,90 @@ public class Unwavering extends BasicGameState {
 
             }
         }
+        
+        for (Yellow y : unlock2) { //stage1
+            if (y.isvisible) {
+                y.currentImage.draw(y.x, y.y);
+                // draw the hitbox
+                //g.draw(i.hitbox);
+
+            }
+        }
+        
+        for (Yellow y : unlock2) {
+
+            if (Player.rect.intersects(y.hitbox)) {
+                //System.out.println("yay");
+                if (y.isvisible) {
+
+                    Player.speed += .1f;
+                    y.isvisible = false;
+                }
+
+            }
+        }
+        
+         for (Green gr : unlock3) { //stage1
+            if (gr.isvisible) {
+                gr.currentImage.draw(gr.x, gr.y);
+                // draw the hitbox
+                //g.draw(i.hitbox);
+
+            }
+        }
+        
+        for (Green gr : unlock3) {
+            
+            if(Player.rect.intersects(gr.hitbox)) {
+                if (gr.isvisible) {
+                    
+                    Player.speed += .1f;
+                    gr.isvisible = false;
+                }
+            }
+        }
+        
+        for (Pink p : unlock4) { //stage1
+            if (p.isvisible) {
+                p.currentImage.draw(p.x, p.y);
+                // draw the hitbox
+                //g.draw(i.hitbox);
+
+            }
+        }
+        
+        for (Pink p : unlock4) {
+            
+            if(Player.rect.intersects(p.hitbox)) {
+                if (p.isvisible) {
+                    
+                    Player.speed += .1f;
+                    p.isvisible = false;
+                }
+            }
+        }
+        
+        for (Finalitem f : unlock5) { //stage1
+            if (f.isvisible) {
+                f.currentImage.draw(f.x, f.y);
+                // draw the hitbox
+                //g.draw(i.hitbox);
+
+            }
+        }
+        
+        for (Finalitem f : unlock5) {
+            
+            if(Player.rect.intersects(f.hitbox)) {
+                if (f.isvisible) {
+                    
+                    Player.speed += .1f;
+                    f.isvisible = false;
+                }
+            }
+        }
+        
+        
 
     }
 
