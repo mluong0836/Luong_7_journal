@@ -1,0 +1,4 @@
+1.  This is a method that contains the game container and renders the code to actually draw the sprites, draw the objects, etc...
+
+2.  I know that this is a method because it has void, which doiesn't return a value and has parentheses with parameters. As a result, all these characteristics indicate that this is a
+    method.
