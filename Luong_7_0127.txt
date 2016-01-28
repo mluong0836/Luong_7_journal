@@ -1,0 +1,6 @@
+1.  You would add a slick image by moving the image to the res folder, next create a new class if the object you are making is totally new, 
+    then you would locate the image by stating Image = new Inmage(and the location /_). Finally, add the object to an arraylist
+    for easier management. Add a for loop to make the items visible.
+    
+2.  The image is drawn in the update and ender classes. You would add the obkect to the arraylist, specify the coordinates
+    of the object, and lastly make a for loop to check if it is visible and make the boolean is visiblw true.
