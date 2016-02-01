@@ -1,0 +1,5 @@
+1. Some things that I could do to make my game more unique would be to add new elements and change the codes so that it would have a new function. For instance, instead of a main
+   focused "maze" game, my game would involve a more battle and strategic gameplay that will make it more appealing to the player. This could include trying to navigate your way 
+   through a battle dungeon while fighting enemies at each battle stage point. I might also make my gameplay more realistic by focusing on the authentic movements of the enemy. 
+   Therefore, the boss would be harder to fight, since the player's movements would trigger different boss movements that would counter your decisive battle strategies. So, outplaying
+   the boss would be a difficult task to complete; thus, making it a better appeal than defeating the enemy by jumping on them like mario.
