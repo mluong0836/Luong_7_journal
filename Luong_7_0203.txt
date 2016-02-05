@@ -1,0 +1,11 @@
+1.  Revising the code is both important and necessary because if we never revise our work, we will 
+    never have any progress. Revisions is will help us learn new things, such as refactoring, declaring
+    objects, linking classes to one another, etc... In addition, when you revise something, you are basically
+    tweaking minor details, which can provide you with a more appealing end result, since your game might be
+    able to do more when you take the time and bring all your ideas into your codes. For instance, luckily I was
+    given the opportunity to revise my code because I found out that I forgot to edit the names and start menu pictures.
+    Therefore, in these past few days I was able to fix these problems, learn more about the actual code as I had more 
+    time analyzing it, was able to come up with a cooler dungoe game that could be the "ALPHA" verison, and was able to fix
+    my grade for the beta version because of minor errors that I previously had. So, resubmitting and revising is really a 
+    significant way to both boost your grade and understand/ reestablish previous iffy concepts.
+    
