@@ -1,0 +1,3 @@
+1. You could check whether or not the weapons damaged the enemies of not by using a boolean and a method to check if the weapon key is pressed. After detecting if the key is
+   pressed, we would use a for loop to check if the player's weapon intersects the enemy or object. If it does, you would set a counter which deducts a certain amount of hp
+   depending on which weapon or if you used an random, which result it selects. 
