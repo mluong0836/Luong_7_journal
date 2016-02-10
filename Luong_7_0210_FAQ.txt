@@ -1,0 +1,21 @@
+1. A list of ten problems that I have faced when making my orbs include:
+
+	making the orb actually appear on screen
+
+	making the hitbox of the orb intersect the enemy and deal damage
+
+	creating a timer that would identify the mass amount of time until the orb disappears again
+
+	making the orb move across the screen
+
+	enabling the orbs to appear and disappear when you press the space button
+
+	animations to the player sprites when you press the space button, which makes the orb appear but can't move smoothly. 
+
+	making the orb react with the block tiles so it does not go through the walls.
+
+	making the damage method work for the orbs
+
+	forgetting to input getters and setters
+
+	actually now I am stuck trying to create this orb which does something else when it touches an enmemy.
