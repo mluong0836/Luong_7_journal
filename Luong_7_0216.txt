@@ -1,0 +1,7 @@
+1. An array to store the tiles that have blocked properties was one uce for an array in my SLick game. Based on my knowledge, an array is a set value that you give a certain
+   amount that remains the same throughout the game, such as my blocked tiles. An arraylist on the otherhand, can add an infinite amount of objects and can be editted by adding
+   several objects into the arraylist, such as dojo.add(Micheal);
+
+2.  Another use for an array could be to store the size of a board game. We can specify the amount of black and white squares and the length and width of the checker board through
+    the use of an array for the length and an array for the width. THis is because the length and width and the square tiles remain unchanged throughout the game.
+
