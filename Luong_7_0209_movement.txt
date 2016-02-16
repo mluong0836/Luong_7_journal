@@ -1,0 +1,16 @@
+1.  I wil make the orb move in the direction that I am facing my using four distinct booleans called face_left, face_right,
+    face_up, face_down. Next, I would check to see which boolean is true, if the player is facing right, then the boolean
+    facing_right is true while the other three are false. So, that means I will need to specify which booleans are true in
+    the keystrokes. Then, after the booleans I would need an if statement to check which boolean is true. For instance,
+    if(face_right) I would then indicate the position of the orb by setting its x and y coordinates 5 units (deltas) away 
+    from the player. Next, after getting all the position, I would translate the orb to the right by or adding
+    10 delta from the original player's position to the x coordinate. If its facing left, you'd subtract 10 from the x 
+    coordinates. Morever, if your looking up, you add 10 delta towards the y coordinates and subtract 10 delta if you're facing
+    down. For example:
+                      if(facing_right) {
+                          orb.setLocationX.player.locationX;
+                          orb.setLocationY.player.locationY;
+                          orb.getLocationX.player.locationX;
+                          orb.getLocationY.player.locationY;
+                          orb.locationX(orb.getLocationX + 10);
+                      }
