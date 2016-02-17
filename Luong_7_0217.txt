@@ -1,0 +1,22 @@
+1. Arrays are used to iterate through a series of objects, items, strings, etc... that are a fixed amount. For example, in my slick2D game, I used an array to hold all of the 
+   block tiled properties, since these don't change.
+
+2. The code for an int array would involve square brackets and int. SO it would be: 
+
+		int [] ages = {16, 18, 12};
+		
+3.  The code for a String array would again involve String, square brackets, the name of the array, and an optional series of strings. THis would look like this:
+
+		String [] names = {"Micheal", "Cody", "Leon", "Joushua"};
+
+4.  The code for a boolean array would be:
+		Boolean guesses[];
+
+5.  The code for a double array would be:
+		int Length[10] width[10];
+
+6.  You would change the first value of an int array to say 42 by specifying the numbers that are in the arrays:
+		int ages[] = {42, 50, 80};
+		SO, the first number in the array would be 42.
+
+7.  
