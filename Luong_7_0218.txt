@@ -1,0 +1,25 @@
+1. It would be unrealistic/unproductive to memorize Slick syntax because slick provides an easy access to the general codes. For example, I didn't know that there was already 
+   a file to make music, all you needed to do was add the music and play it through a loop. In addition, Slick update, init, and render already provides as the main three
+   methods that we mainly use.
+
+2. An array stores a certain amount of data that will be used later on. FOr instance, string arrays hold a certain number of arrays, int arrays hold integers.
+
+3. You would make an array, such as an int array, by stating the type of array, in this case int, square brackets, and the name of the array. For instance, an int array would be:
+	int [] numbers = {1,2,3,4,5,6,7,8}; You would make a string array by:
+					    String [] names = {"Micheal", "John", "Cate"};.
+
+4. An arraylist holds a list of objects that can be editted/changed. 
+
+5. You make an arraylist by first calling the class that carries an object, then typing Public ArrayList<class name> name of the arraylist = new ArrayList;
+
+6. Three useful methods that you could use to make an arraylist includes using the . to make a template for an arraylist, copy and paste an original arraylist, or just call upon
+   it from a different class possibly.
+
+7. An array cannot be editted while an arraylist stores objects that can be added and editted.
+
+8. We could give a counter to the avater by stating private int hpcounter = 1000; Then when an enemy intersects the player's hitbox and a boolean damage is true, you can say
+   hpcounter = hpcounter-60;
+
+9. Ypu should constantly practice CS out of class because that is the only way to create a good program that has neat features. No tinkering means no progress.
+
+10. This code specifies the sprites that will be animated. The x represent the rows while the column represents the y coordinates.
