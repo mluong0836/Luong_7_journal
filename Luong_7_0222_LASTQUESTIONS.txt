@@ -1,0 +1,12 @@
+1. I am ready for the test this Friday based on the good notes that I have taken throughout the lectures that Mr. Davis did.
+
+2. Some unanswered questions regarding the Slick Game includes how to make timers that stops the animations from continuing. I have tried using for loops to serve as my timer,
+   but I am not able to perform the timer function in stopping the attacking animation for it keeps on repeating the frames. In addition, I also would want to know how to make 
+   particle effects in my game to make the atack more authentic. 
+
+3. I think I will continue looking at Stack Overflow for the answers and prioritize my time at home in creating additional tilemaps and levels for my game. 
+
+4. I am prepared for this test for I have necessary knowledge over the basic components of Slick. For instance, I now know the difference from an array and an an ArrayList
+   and how to declare, initialize, create objects, understand what static private and public do, etc...
+
+   
