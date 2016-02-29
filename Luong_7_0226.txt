@@ -1,0 +1,7 @@
+1. This creates a map setting which creates a map using an array that prints out periods for when i is less than or equal
+   to the map length.
+   
+2. You could make an if statement in the for loop stating that if map[0][0], then print out 'x'.
+
+3. I could replace one of the x's as a five and use an if statement inside a for loop to detect when the condition of the array
+   is met.
