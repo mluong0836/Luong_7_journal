@@ -1,0 +1,27 @@
+public class Rats {
+    
+    public static void main (String args []) {
+        private int health;
+        private int xLocation;
+        private int yLocation;
+        public Rats ratarmy;
+        public int rats[][];
+        
+        public Rats(int a, int b) {
+            this.health = 100;
+            this.xLocation = a;
+            thix.yLocation = b;
+        }
+        
+        public void getlocation() {
+            for(i = 1; i < 6; i++) {
+                rats[i][i];
+                ratarmy = new Rats();
+          }
+    }
+}
+
+2. The declaration takes place when you first declare the variables such as the x and y location. You instantiate when you 
+   specified the varaibles in the constructor and called upon it by using the word "new". Such as ratarmy = new Rats();.
+   
+3. The two dimenional array would be int location[a][b];
