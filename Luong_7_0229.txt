@@ -1,0 +1,55 @@
+1. We make a class by following the syntax described below:
+        public class Explanation {
+            public static void main (String[] args){
+                System.out.println("This is a basic class.");
+            }
+        }
+        
+        So, you would need to specify the class through public class and the name of the class. Next, you need 
+        public static void main (String[] args) {
+        } to make it run. These are the requirements.
+        
+2. No, Donut Bismark = new Donut() is not a class constructor. This is just a way to make new objcts and initialize them.
+
+3. We make a class with values and a class constructor by first declaring your variables and then pass the values
+   to a class constructor like this:
+   
+        public class Orb {
+            private int locationX, width, height;  //keep private so varaibles don't interfere
+            private int locationY;  //get rid of static because it will set for every single orb the same
+            private boolean isVisible; 
+            private int dmg, hitboxX, hitboxY;
+            private Image orb;
+            public Shape hitbox;
+            private int timer;
+            private int direction;
+            
+            //class constructor here:
+            public Orb(int x, int y) throws SlickException {
+                this.isVisible = false;
+                this.locationX = x;
+                this.locationY = y;
+                this.orb = new Image ("res/orbs/Ninja_12.png");
+                this.hitbox = new Rectangle (locationX, locationY, 100, 100);
+                this.timer = 0;
+            }
+            
+3. A getter gets the values (query) of a specific variable after it is instantiated. In our game, we used getters to create 
+   a time limit that would act as a timer for our many functions such weapons.
+   
+4. Setters set the values of the newly instantiated objects. They are responsible in setting the value to be used, such as setting
+   a timer to 1000 millisconds.
+   
+    public void setHitboxX(int hitboxX) {
+        this.hitboxX = hitboxX;
+    }
+    
+5.An array of breakfast would be a a sset list that contains a finite amount for types of breakfast.
+  For example: 
+  
+          Public String Breakfast[];
+          
+          Breakfast[1] = "Tacos";
+          Breakfast[2] = "Fries";
+          Breakfast[3] = "hotdogs"'
+        
