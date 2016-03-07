@@ -1,0 +1,6 @@
+1. I am currently working on my second level.
+
+2. I think my revisions will be completed after I do the homework, which means by Monday I should have an Alpha version. 
+   It takes time to create the complicated traps, barracades, bosses, and weaponary then you can imagine. I tend to take
+   things a step further, which again overcomplicates the basic game develpment task. However, I feel that I learn more by
+   tinkering. 
