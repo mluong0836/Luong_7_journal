@@ -1,0 +1,9 @@
+1. I don't think that I missed anything, but if I did it was probably from the onfusion of the instructions to create
+   a Slime array. 
+   
+2. I could have asked more questions regarding the setup of an array to clear my misunderstandings.   
+
+3. It turns out that I was very sucessful. I reviewed the Slick2d notes that we have been taking for 2 weeks and just memorizing
+   the facts and concepts.
+   
+   
