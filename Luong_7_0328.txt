@@ -1,0 +1,39 @@
+1.    Several differences from these languages is that the C version syntax is delay(milliseconds) while in Java it is sleep(milliseconds). Another 
+    difference is the syntax for in C, we use const to create an unchanging variable while in Java we just state a variable with its name and then 
+    a value such as int numberz = 100; while C is const int nmberz =100; A final difference would be that C is more function oriented while Java is 
+    object oriented. In C, the program and language makes use of functions that will be called similar to javascript. On the otherhand, in Java we 
+    use methods and objects to interact.
+
+      Several similarities include the similar for loop, if, else, and while loop syntaxes. In addition, both have booleans that can be used
+    to determine if a certain condition is ready to be evaluated, which makes both programs easily to get along with for both check conditions.
+    Lastly, both programs makes use of a void loop to continuosly loop through a specific section of code.
+    
+2.  Some code adaptations that I have made included changing the frequencies of sound form the peizo buzzer, the led lights, the pin location,
+    adapted song with a button push, and create a count down timer that will have lights how up once the delay is over. We are now working on
+    the crystal screen to make a live keyboard.
+    
+3.  Several things are required for a circuit. First, you need jumper wires to move the circuit and a redboard which contains the 5V(positive)
+    and GND(GROUND/negative). Then, once you connect these wires in the positive and negatice slots on the breadboard, you have created a basic
+    circuit that will turn a light when you connect the negative charge with a resistor and positive with a wire.
+    
+4.  Programs are compiled in Arduino through signals that emit sound waves, electrical circuits, light, etc... You first check to see if there
+    are any errors and then upload the code to your redboard.
+    
+5.  I enjoyed circuit 5, which involved the button interaction in which you have two buttons with 2 different states. Then, which ever has a 
+    higher state will then pass a conditional that will make a light shine. For instance, when no button is pressed, both lights are on low.
+    However, when button one/green button is pressed, the green light will show up, since it states whecn button one is high, this would make
+    Ledgreen high as well. However, when you release it, it becomes low; therefore, changing conditions, affecting the amount of light used.
+
+6.  I completed all 16 examples, but found the 2, 5, and 11th circuit quite useful for designing a piano that would play musical notes based
+    on the buttons pressed. In addition, to step up my game, we were planning to include a screen that would have easy, medium, and hard songs
+    to play. We planned out the whole thing. We would first make the buttons detect a signal by saying that if a button signal is high/pressed,
+    then run this code which will be broken down further depending on the color of the button. For instance, if red, the a c note frequency will 
+    be played. Next, we will store in information like in SImon says, but then show the notes being played on the screen with a music sheet to 
+    go off of. In theory this will be similar to guitar hero, but not since we have keys instead; "Piano Hero".
+    
+7.  I have accomplished many things. For instance, I understood the use of functions and found out that these function have parameters that
+    you can pass to create more interaction. For instance, a sound function will pass the char [], frequencies, and the buttons detected. In
+    addition, I learned the significance of const, which will keep the variable constant/unchanging. I also begam to understand the positive
+    and negative chages that are used to create light, sound, and circuits in the breadboard and redboard. I also learned how to identify
+    a 10K from a 30K resistor, whcih determines the amount of electricity is transmitted. ALl in all, this has been a great experience. A 
+    combination of hands on and coding. 
