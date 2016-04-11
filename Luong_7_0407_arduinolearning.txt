@@ -1,0 +1,22 @@
+1.      I have learned a various CS skills as well as used these skills to solve multitude of problems faced during our arduino
+    project. The first one is the realization that we could use for loops to create 8 buttonstates, which saves us time from
+    naming the buttons and coding each individual one since we could simply create an array like the on in our prior SLICK games.
+    We have found out that by coding 8 different buttons there could be a lot of spelling errors that would take half a class
+    period to identify. Therefore, arrays and for loops limits these errors because we could call a button like i=[3] as the third
+    button. In that way, we don't have to keep checking off the names since we can easily count the integers left.
+        A second skill that I have obtained includes the understanding of void loops. I now know that void loops will continue to 
+    loop a set of code all the time. For example, instead of making a for loop that makes the LED light blink 900 times to make sure
+    that the player will assume that it will go on forever and pull the cord out, we could simply put the code for the LED blinking
+    in the void loop and it will run whenever it reaches to the end and reloop back. Furthermore, void loops provide a basic template
+    where we culd then implement several methods that would run once in the void when a condition is met. Void loops is also very 
+    organiztional and clean because anything repeated stays in the loop while exteranl methods can just be called within; thus,
+    there is no overwhelming and complicated code all bunched up.
+        Finally, I have learned the circuits and its importance to the arduino's response. For example, the high and low detection
+    for the individual buttons is actually quite simple. The reason why it runs a code when it is on low is because the buttons is
+    connected to ground and thus carries a negative charge. On the otherhand, when it is high, the button is not pressed so it does
+    not run the code. High occurs because the legs are not connected to ground and therefore is connected to 5V; thus, bringing a 
+    high/positive charge. In th LED, a high charge would connect both the ground and now 5V to the led light and creates a spark of 
+    energy in the form of light. When it is low, there is no 5V connection; so it is negative. All in all there are many great lessons 
+    learned, but the top three were the ones shown.
+    
+            
