@@ -1,0 +1,34 @@
+1.  I have had significant progress through the challenges that we have faced on trying to make a button sound correctly.
+    Although this seems highly improbable to get stuck on because there has been code examples incorporated, it really is hard
+    because we have decided to create a piano that can play several octaves. However, we have diverged way off from the code.
+    It's easy to finish a task if you tinker with code examples, but we felt that by diverging and creating something wholly 
+    unique, we were able to strengthen our knowledge on the C language. Therefore, we felt that by starting from scratch, the 
+    code that we come up with will sway more to our advantage, sinc we were the ones who coded it and will know more about its
+    potential and fluctuations. So, by figuring out that we needed tone(9, note[0]); in order for it to run the code, we were 
+    on our way in making several buttons. However, we were put down when we realized that even though we duplicated this code
+    for several buttons, the last button on the list would think that it is being pushed and would continue playing continously.
+    As a result, we were able to understand our poor coding and soon realized we need to set an if statement to first look at 
+    if there was any signals that were being presssed. Then, we would run the code. Although we have not fully tested, I have 
+    tried it on a website that is also an arduino stimulator and it worked. Furthermore, we finally understood  the high and
+    low detction concept. When you push the button, it would be low because the push button is brought closer to ground(neg. charge).
+    It is high when unpressed because the two legs aren't connected so only 5V (pos. charge) is present. We have had many accomplishments in the end.
+    
+2.  We have enabled a certain tone and LED light to flash when a button is pressed. In addition, we were able to successfully
+    write our own code using no snippets of the code earlier given to us to tinker. 
+    
+3.  There are many things to be done. We want to create a version of guitar hero; therefore, we still needed to create a sequence
+    of LED lights that will travel downward to the button and when it reaches the last LED light, you will need to press the button
+    in sync. When you do, a note will be played. There will also be a LCD screen keeping track of how many errors you have and give you
+    a raw score of your success in the end. As you can see, our project is going to be big and we still have a lot to do. We still need
+    to code several other buttons, a memory function, LCD function/display of what we want, a bunch of LED lights, etc... We simply have the
+    mini prototype done.
+
+4.  I think that we will be able to turn in a basic working piano without any LED sequences yet. It would be a basci 8 button
+    piano that plays one octave when you press each individual button.
+    
+5.  We are writing several code changes. For instance, because our 8 buttons were out of sync., we had to use if/else statements
+    to prevent bombardment of signals. We also added a for loop to create 8 buttons states; thus, showing our knowledge of code
+    efficiency.
+  
+6.  We have created a tone function that would store certaint ones until it is played. We are still creating a LED sequence function
+    and memory function as well.
