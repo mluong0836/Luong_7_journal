@@ -1,0 +1,27 @@
+1. An assembly is a basic type of programming language that only contains the code that is necessary to perform the specific 
+   task, nothing else. In other words, an assembly gives direct and complete control over the functions.
+   
+2. The assembly language provides feedback faster than high level programming languages, since it just performs the specified
+   task at hand at tells you if it either works or doesn't. Therefore, although assembly is tedious to program, it will provide
+   faster results and serves as an outline of a more complicated function that you will later do on a high level language.
+   
+3. Assembly is very different than the Java programming language that I'm used to. For instance, asssembly is a lower level
+   language while java is a higher level language. In addition, assembly performs single arithmetic operations while Java can 
+   do multiple operations at once. For instance, you can't say rcx = rax*rbx + 7 in assembly. Instead you need to write
+   rcx = rax; rcx = rcx*rbx; rcx = rcx+7. On the other hand, Java is able to perform these complexities. Java takes objects while
+   assembly only takes primitave data.
+  
+4. High level programming languages are easily understood by humans, in  other words, they are human readable. On the 
+   otherhand, low level programming languages are harder to understand and are meant to be easily understood by computers
+   alone. An example of a low level language would be machine language while a high level language would be Java. Java's
+   syntax parallels to the human language while low level languages are more computer read; thus, showing more complexity
+   in its patterns.
+   
+5. Java is an example of a high level language. Java is a more complicated language and is much easily understood by humans.
+   In addition, Java's syntax is closely related to Human language, is able to perform multiple operations, is objec-oriented,
+   and has more abstract instruction other than just following computer directions. 
+   
+6. Assembly is an example of a low level language. Assembly is much more basic, and more computer understandable than human
+   efficient interpretation. Some characteristics that categorize Assembly is that it uses primitave data types, makes use of
+   computer commands, which will only perform the necessary functions that is required. Furthermore, if you compare Java with
+   Assembly, you will see that Assembly is very basic.
