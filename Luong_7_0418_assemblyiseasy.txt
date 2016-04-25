@@ -1,0 +1,47 @@
+1. You type elf64 to indicate that it is 64 bit. Elf64 means Executable and Linkable format for 64 bit computer files, which
+   allocates the necessary information and sufficient storage for a 64 bit. You would need this in order to execute a variety
+   of files such as the.asm files.
+   
+2. ld serves as a linker that will enable the file format to be read and formatted in another way so that it could run in the
+   command line. As a result, this line of code is necessary to execute this file.
+   
+3. You do not need the chmod, which changes the access permissions so that you could run the files or programs. The reason
+   why you didn't have to use it is because elf-64 already executes and links the file. Then simply ld will validate the link,
+   which already does the chmod's function.
+   
+CODE
+                                                
+          global _start
+
+        section .text
+_start:
+        ; write(1, message, 13)
+        mov     rax, 1                  ; system call 1 is write
+        mov     rdi, 1                  ; file handle 1 is stdout
+        mov     rsi, message            ; address of string to output
+        mov     rdx, 24                 ; number of bytes
+        syscall
+
+        ; exit(0)
+        mov     eax, 60                 ; system call 60 is exit
+        xor     rdi, rdi                ; exit code 0
+        syscall                         ; invoke operating system to exit
+message:
+db      "Computer Science is fun", 10   ; note the newline at the end
+
+
+4. It turns out that typing this out was not easy. I had many problems regarding the syntax and knowledge of .asm files.
+   For example. at first I tried replacing the message with "Computer Science is fun", however, I soon realized that you
+   would need to clarify how many bytes is needed. In otherwords, you would have to calculate the amount of characters
+   (including spaces), that your message contains. Therefore, I learned that this type of language requires more 
+   specifications than the Java language that I am used to.
+   
+5. Now that I have tried programming in assembly, I realized that Assembly is not quick or easy as I thought it would be. It  
+   turns out tht Assembly requires more time because you would have to code every single thing. Nothing is set up and you
+   would have to specify the message, length, number of bits, etc... Therefore, assembly is both time consuming and hard
+   because we are so used to Java and other high level languages that does a lot of the coded functions in the background and
+   consists of libraries that enables faster and easier understanding of the program at hand. 
+   
+7. Low level languages represent a category of languages that is more directed towards the computer rather than human 
+   readable. In addition, lower level languages involves more direct control over what the computer does, since these
+   codes that I have just typed requires more interaction with the computer. 
