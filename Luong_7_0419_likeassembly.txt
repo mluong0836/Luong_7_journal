@@ -1,0 +1,41 @@
+1. Some similarities that I noticed between Assembly and Human Resource Machine includes the concepts, functions, and several
+   cases of the syntax structure. For example, both Assembly and Human Resource Machine has a jump condition, which means that
+   in the case of this event, please go to this section right here. In addition, both languages enables you to create a 
+   "counter" effect. Although the syntax is different, the concept and function are the same. For example, in Assembly, you 
+   would add or subtract by performing a counter register. Similarily, in Human Resource machine, there's a bump+ and bump-, 
+   all of which will either add one or subtract one depending on the type of bump you selected. As a result, with small
+   operations like this, you would create a mini counter system.
+   
+   
+2. Despite the various parallel features, there are many distinguishable characteristics. There are the varying syntaxes, 
+   surface complexity level that's present, and different functions. For example, creating a counter involves more thought 
+   and lines of code than in Human Resource Machine, which is just simply looping a bump down or up. In assembly you would
+   need this block of code to create a small counter system:
+   
+   mov [num], eax
+   mov eax, 4
+   mov ebx, 1
+   push ecx
+	
+   mov ecx, num        
+   mov edx, 1        
+   int 0x80
+	
+   mov eax, [num]
+   sub eax, '0'
+   inc eax
+   add eax, '0'
+   pop ecx
+   loop l1
+	
+   mov eax,1          
+   int 0x80           
+   section	.bss
+   num resb 1
+   
+     On the other hand, in Human resource Machine, there is more background tasks behind the game, since Human Resource 
+     Machine is intended to be a much more simplier game for the common person to think conceptually through. Therefore, 
+     counters require a conditional loop stating when the numbers in greater or negative, than continue to loop back and bump 
+     up or down. Therefore, the intentions of the languages vary as well.
+
+    
