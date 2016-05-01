@@ -1,0 +1,78 @@
+1. There are many concepts that I believe will be on the end of the year test for Computer Science. Many of these concepts
+   include the information that we were suppose to grasp from athe multiple projects that we have done, such as Challenge Zero,
+   Guessing Game, JavaFX, Text-Based Game, Slick 2D, Arrays, etc... Therefore, I have came up with a list of ten concepts:
+   
+   1. The first concept that will be tested over will be the basic/necessary code to make a running program. This code would
+      be what starts out the main program which is:
+      public class Hello World {
+          public static void main(Strings[] args { 
+              System.out.println("Hello World!");
+          }
+      }
+      This is a mandatory concept to establish in order to start anywhere else. Without this knowledge, you will never pass
+      this class because everything builds off from these few lines of significant codes.
+      
+  2.  A second concept that could potentially be on the test would be if and else if statements. Now this piece of code is 
+      extremely important because without it, you won't have a very interactive Java program. If and else if statements check 
+      for specified conditions and will run a chunk of code when it detects that the condition has been satisfied. For example,
+      you would not be able to check whether or not a boolean is correct whithout these statements. Thus, your game won't know
+      when to release the boss because it doesn't know when to execute bosschallenge(); since there's no way of knowing if the 
+      boolean is true or not. As a result, if and else statements most likely will be mandatory to understand; thus, will be on
+      the end of the year test.
+      
+  3.  A third concept that could be on the test would be understanding methods conceptually as well. Methods make coding easier
+      and more efficient because you could simply call upon this method, which holds a chunk of code ready to be run when you 
+      call the method by typing the_name(); Methods was a significant part of our earlier projects such as Methods Madness,
+      our Text-Based Games, and continue to be used throughout our programs. Thus, it is necessary to review these concepts;
+      since methods are constantly used and quite useful.
+      
+  4.  Another concept that could be on the test include ints, chars, strings, scanners, and booleans; all categorized as 
+      smaller details within the main picture. In other words, these are the key components of your Java program, without 
+      them, there would be little interest left in the java world. Ints represent integers and are necessary to hold numbers.
+      Ints are necessary to make calculator programs, games that revolve around 2d maps, which makes use of ints to make 2d
+      arrays. In addition, chars are important as well as strings because that is where the text and character symbols are
+      put into play. Strings represent words, and you need them to print characters out on the screen. Furthermore, scanners
+      are used to detect user input while booleans allow a true and false value to return to determine when you should 
+      execute the code that you wanted to. Thus, in order to advance further, you would have to understand the smaller factors
+      that that facilitate the programs. 
+      
+  5.  A fifth concept that would be on the test would be for loops. For loops are quite useful and should be tested over to 
+      ensure that the students have mastered this concept. For loops are efficient in that it performs an action for so many 
+      times until the condition is falsed. For loops makes use of integers to create sort of a count down or up. Some examples
+      of for loops usuage include to make 2D arrays that create a 2 dimensional map. This would consist of two for loops embedded
+      into one another. Then, it would print ints, chars, or strings depending on the array type you used. 
+      
+  6.  Another concept would be the use of arrays. Arrays are significant because they store a set amount of information that
+      could be later used. Although this is hard to conceptualize, here's an example. If you wanted certain tiles to have 
+      blocked properties, then you would store the x any y coordinates in an array called Blocked to store all the tile
+      coordinates. When you need to call upon it, you could use for loops or a set piece of method that's part of the library
+      as in SLick 2D. All in all, arrays should be o the test because of its endlesss factors influencing the java environment.
+  
+  7.  A seventh concept that you would need to be tested over would be an arraylist. Arraylists store information, but can also
+      be editted to add or delete objects for instance. For example, in our slick game we used arraylists to store our items,
+      enemies, treasures, and weapons; all of which are objects that are stored and called upon by an arraylist. It's clearly
+      evident that arraylists are significant because they create an editable list that can be reorganized to your situation,
+      such as adding random objects, enemies, or simply names that would be deleted later on.
+      
+  8.  Another concept that you should be evaluated over would be the understanding of public, private, and static. All of which
+      having their own purposes and usuages. For example, public variables, methods, etc... can be accessed across different
+      classes. Therefore, you can better organize your code to specific and separated classes with public variables. Then
+      call upon it to a different class when needed without any worry. However, private is the opposite. Private variables
+      can only be accessed within that class and nowhere else. Although with some disadvantages, there are reasons why we use
+      it. Private ensures that it does not disrupt other variables from different classes. Static, on the otherhand, makes all
+      instances of that variable share the same value; thus, if one enemy dies form losing all of his health, then all of the 
+      enemies will die as well. 
+      
+  9.  Another concept that should be assessed would be classes. Classes provides a blueprint and template that also organizes
+      the chunk of code; to provide better readability and organization. Classes can be separated or be within another class.
+      To call upon a different class, you would make it an object, which ties in to the assessment of objects. 
+      
+  10. Finally, a final concept that could be accessed would be the most important concept of all. That would be problem solving.
+      In other words, this assessment should contain error-filled codes that forces the students to put all their knowledge of
+      Computer Science and put it on paper. Students will be asked to identify and fix errors, of syntax, order of if and else
+      if statements, etc... I feel that this is the most important concept to master because everyday you face problems that you 
+      have to learn to cope with and tinker to solve. Therefore, the best lessons comes from failure, reevalutions, and 
+      perfection of past knowledge.
+      
+These are all of the 10 main concepts that I believe will be examined on the test.
+      
