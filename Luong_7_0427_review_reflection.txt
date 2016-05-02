@@ -1,0 +1,18 @@
+1. Students are encouraged to learn Computer Science because it teaches them an important skill of not memoriztion, but 
+   instead on problem solving, advantages of tinkering, and provides a unique environment to hone your skills of inductive
+   and deductive reasoning. For example, based on my personal experiences, I found out that Computer Science helped me identify 
+   similarities that enabled me to use deductive reasoning to solve various problems. Web Design uses html while CS uses mostly 
+   Java, although we sometimes broadly go over other language types such as C and assembly. thus, despite the many differences,
+   there are few things that remain the same and cross interact each other to build both my coding, problem solving, and pattern
+   skills. For instance, Challenge Zero in CS showed the significant effects the order of conditionals can be. Thus, when I 
+   started using javascipt in web design, I too used this concept to prevent the same problems from reemerging. Thus, tinkering
+   is a very important lesson that one whould learn; which is what CS is all about.
+   
+   
+2. No doubt that students shuld understand key components, such as the basic codes to run a program, what Java is, the if and
+   else if statments, for loops, etc... However, other life lessons are taught as well. For instance, CS teaches that only
+   determination and willingness to sacrifice some outside time will lead to success; lessons that schools have not embed for
+   teachers have always imposed strict rules and never really give students a chance to learn anything else other than that of
+   the curriculum. Therefore, I think that students should learn tinkering and problem solving skills in CS, because you could
+   carry this concept onward. Every job needs persistence, patience, willingness, tinkering, and problem solving though inductive
+   and deductive reasoning. So, CS students will have an advantage if they learn these lessons during their time in class.
