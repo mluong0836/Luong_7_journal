@@ -1,0 +1,92 @@
+1. Here is the Java method that would cube a random number:
+package notes_cubed;
+    import java.util.Scanner;
+    import java.util.Random;
+/**
+ *
+ * @author micheal
+ */
+public class Notes_cubed {
+    
+    static int numbers;
+    static String pick;
+    static Scanner enter = new Scanner(System.in);
+    static Random slot = new Random();
+    static int answer;
+    static boolean calculate;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        calculate = true;
+        while(calculate) {
+            cubed();
+        }
+    }
+    
+    static void cubed() {
+        numbers = slot.nextInt(50); // randomly chooses an integer
+        System.out.println("The computer is going to pick a number...");
+        pick = enter.nextLine();
+        answer = numbers * numbers * numbers;
+        System.out.println("The cube of " + numbers + " is " + answer + ".\n");
+        System.out.println("Do you want the computer to calculate another number?\n");
+        System.out.println("Please put y or n.");
+        pick = enter.nextLine();
+        
+        if(pick.contains("y")) {
+            calculate = true;
+        } else {
+            calculate = false;
+        }
+    }   
+}
+
+2.  On the otherhand, a function that would cube a number in Arduino's C version language would be: 
+
+void setup(){
+Serial.begin(9600);
+}
+
+void loop() {
+  int i = 2;
+  int j = 2;
+  int k = 2;
+  int a;
+
+  k = myMultiplyFunction(i, j, k); // k now contains 6
+  Serial.println(a);
+  delay(500);
+}
+
+int myMultiplyFunction(int x, int y, int z){
+  int result;
+  result = x * y * z;
+  return result;
+}
+
+3.  The class, an object, and class constructor for class student would be:
+
+  public class Student {
+      public int x;
+	    public int y;
+	    Image desk;
+	    Shape hitbox;
+	    Image Student = new Image("res/desks.png");
+
+	Student(int a, int b) throws SlickException {
+		this.x = a;
+		this.y = b;
+		this.hitbox = new Rectangle(a, b, 384, 128);
+		this.currentImage = desk;
+        }
+}
+
+4. If we were to continue with Arduino, I would finish my overextending ideas of an led light show incorporating music 
+   notes in some way. This was originally code named as "Piano Hero". I was working on the concepts and was learning about
+   the shift registers. Theoretically, each shift register will allow an additional 8 pins, but done rightly, 60 pins could
+   fit using 4 shift registers, based on an advance method of using analog pins. To light up each led pin with an analog
+   pin, I would use different resistant resistors to create a lighting effect. So, if I had more time, I would dig deeper
+   into the Arduino coding and create a dancing light show accompanying the finished keyboard.
+   
