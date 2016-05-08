@@ -1,0 +1,67 @@
+1. An array is a stored list of variables, such as strings, ints, chars, doubles, etc... An array has a set amount of these
+   variables and cannot be editted later on. This is where the difference between an array and an arraylist appears.
+   
+2. One makes a simple array of strings by first declaring the array's name with a set of angular brackets. Next, if you wanted
+   to set the list, you would put a set of brackets with words and sets of quotation marks surrounding each one. This latter
+   part isn't necessary because to just declare the array you would only need to type:
+                                      String Words[10]; // this is declaring it
+                                    //You could then input Words[0] = "pizza";
+                                    
+3. The syntax for a 2-D array would be the variable type, in this case we will use chars, two sets of angular brackets, and if
+   you wanted to declare the spaces first, you could then put the amount of storage space/size for each array within the 2-D 
+   array. In other words, it is:
+                                char examples[][] = new char[12][12];
+                                
+4. Very similar to the 2-D array, the syntax of a 3-D array would be the type of the variable, the name, three sets of angular
+   brackets, equals, then new variable type, with the size specified for all three arrays. Therefore, you can think of a 3-D
+   array consisting of 3 individual arrays built into one gigantic one. Thus, creating a 3-dimensional image when done 
+   correctly.
+   
+5. You would specify the third value by first declaring the array, then indicating that you'd want to edit the third listed 
+   item specified. So, for String names [] = new String[10];
+   put names[2] = "Tommy"; We used the number two because it starts counting from zero; thus,, the third value is two instead 
+   of three.
+   
+6. The syntax for a while loop is while(some boolean is true) { continue doing this set of code }. While loops will keep 
+   running until the condition is false. Here is an example:
+                              while(present) {
+                                  numbers++;
+                                  System.out.println("You have been here " + number + " times.");
+                              }
+                              
+7. You should use while loops in your game because while loops will continue to run a specified code, such as drawing the 
+   map, until the set boolean is false. Therefore, whenever the player wins or loses the game, the set boolean would become
+   false; thus, ending the while loop, which in return stops the game. However, if the game should continue, then the boolean
+   will remain true until the win or lose condition is met to stop the game.
+   
+8. You would call your method in main by calling the method's name with a set of parentheses and any parameters that you'd
+   want to pass. For example:
+                              public static void main (String args[]) {
+                                    gameplay();//this is calling the method from outside of main
+                              }
+                              
+                              static void gameplay() {
+                                    counter++;
+                              }
+                        
+9. It is recommended to use .toLowercase() in your scanner input because this will limit the errors that could occur regarding
+   capitalization when it should be lowercase and the other way around. This will detect the two options and convert it two
+   lower case characters to prevent confuscion.
+   
+10. You should use different methods to check the player's intersection and movement because this will help organize your 
+    code into smaller sections for you to understand. In addition, putting it in separate methods will enable faster checking
+    because whenever you need that block of code, you can just call the method and not have to retype htat whole entire thing.
+    Every section has a purpose, which means it should have separate methods; all of which has a purpose. You would create a
+    method that checks for the player's movement by creating a movement method public static void movement() {}.movement();
+    Then, you would use the for loop that draw the array and implement that drawing code into this method. Therefore, you
+    have a separate method detecting movements. Now, whenever you need to detect intersections, you just call upon the 
+    intersection method. Public static void intersection(){} by typing intersection();
+    
+11. Some values that you should pass include the x and y coordinates for the player's movement, enemies' ,movement, an array
+    stored coordinates. In addition, you could also pass the object's inventory coordinates as well; thus, facilitating the
+    efficiency of checking the coordinates intersection with little code as possible. You would pass the variables in the
+    method by:
+    
+              public static void player_intersection(int numberx, int number y) {
+                    System.out.println(numberx + " " + numbery);
+              }
