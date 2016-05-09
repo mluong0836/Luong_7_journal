@@ -1,0 +1,72 @@
+1. The x coordinate for the array mymap[67][43], would be 43 and the y coordinate would be 67; thus, in 2-D arrays, the x and
+   y coordinates are switched then the normal x and y syntax that we are so used to. This phenomenon occurs because the first
+   array in the 2-D array would be responsible for drawing the rows. In addition, the second array would draw the columns of
+   the map. Therefore, columns corresponds with the x coordinate while the rows corresponds with the y coordinate; as a result,
+   creating the ordered pair (y,x).
+   
+2. The code for line #a is: if(i = 0) { System.out.print("8888");
+   What line #a is saying is that whenever i, representing the rows, rows equal to zero, then print 8888 on the screen. 
+   Therefore, the console would print out 8888 for row one.
+   
+3. The code for line #b is: System.out.print(map[i][j]);
+   What line #b is saying is that to print out the coordinates, specifically in an organized manner useing i as rows and j as
+   columns to draw a gridded-like system.
+   
+4. The code for line #c is: System.out.println(".");
+   The difference between line #c and line #e is that line #c will drop down a line everytime it prints out the string. On the
+   otherhand, line #e will continue to print the string on the same line; thus, forming a long series of identical sets of
+   strings. Therefore, line #c will print strings out on a new line while line #e will just print out the string on the line
+   that it is on.
+   
+5. The code for line #d is: System.out.println(map[i][j]);
+   What line #d is saying is that you would print out the map array in an ordered fashion with i corresponding to rows and j
+   regarding systems; thus, creating a gridded array picture. The catch is that line #d will draw the i and j coordinates on
+   a new line everytime it's executed.
+   
+6. You would first create a boolean, the name, and specify if it is equal to true or false. Then, you would type while(this 
+   boolean remains true) { do this section of code} For example:
+   
+                            public void example() {
+                                int counter = 0;
+                                boolean continue = true;
+                                while(continue) {
+                                      System.out.println("This is how a while loop is performed!");
+                                      counter++;
+                                      if(counter == 10) {
+                                          continue = false;
+                                      }
+                                }
+                                
+                            }
+                            
+   As you can see, you declared a boolean with a true value, then call a while loop that detects when ever the boolean is 
+   true, continue to print out this string. However, when the counter reaches ten, the boolean is set to false; thus, leading
+   to the end of the while loop. So, while loops depend on the boolean's value overall.
+  
+7. You use static whenever you want to pass that variable/datatype/function shares the same variable across all the instances or 
+   objects that you form. Therefore, when ever you do a static int in the public class, static methods will be able to retrieve
+   the variable and its set number, since the value is affected by all the instances and each will ahave the same set of value.
+   For example, example1(); will have a counter of 5 when you call upon the static int counter; also similar to the method
+   example2(); which will have the counter set to 5 as well.
+
+8. You could use a weapon or inventory place object in your game. Objects come from other classes, so in order for you to 
+   retrieve data from the other public classes, you would need to create an instance and say Inventory pl = new Inventory();
+   You would also need getters, setters, and class constructors. For example: 
+   
+   public class Weapons{
+
+   public Weapons(){
+      System.out.println("Here is an object!"); 
+   }
+       
+   public static void main(String []args){
+      Weapons pl = new Weapons();// instance and thus an object
+   }
+   
+   public static void intro() {
+        System.out.println("You're Welcome!");
+   }
+}
+
+To call the object you would do 
+        pl.intro();
