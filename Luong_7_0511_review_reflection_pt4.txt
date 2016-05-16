@@ -1,0 +1,8 @@
+1. Nested for loops is a very great way to create a variety of objects, game maps, arrays, etc... Nested for loops first does
+   the outer function that is intended and then goes on to the inner function. For example, in this example, netbeans or any
+   Java IDE would first iterate through thet first for loop : for(int i = 0; i <= board[0].length - 1; i++){};
+   Then, since there is a nested for loop, it will go directly to that inner for loop and execute the code that you put in the
+   inner loop : for(int j = 0; j <= board[0].length - 1; j ++){}; Once the condition is false, it will go back to the outer loop
+   count i up by one and continue the same process. Thus, this would be a great way when you make a board game because the first
+   loop (outer) prints out the rows while j prints out the columns in that row, then it iterates and continues the same process
+   until both for loops have a false conditional; thus, creating a 2-D array if you used only two for loops nested.
