@@ -1,0 +1,33 @@
+1. I was part of the few that recognized the 2-D arrays from our previous Slick game and the older journals that referenced
+   it. I was able to recognize this concept because I remembered answering the older journals throughly; thus, showing that 
+   if you truly answer the older journals with the best of your abilties, the information that you display will always be
+   engrained somewhere in your brain. So, when you need to recall the facts, all you need to do is just have a quick glimpse
+   of prior projects and journals that you have written. 
+   
+2.
+   /*****************************************************/
+   Here are 10 Questions regarding the Array Assignments
+   /*****************************************************/
+   
+   1. How do you make a 2-D array, 3-D array, and 4-D array? What do they have in common?
+   
+   2. Explain why the normal x and y coordinates in 2-D arrays are switched?
+   
+   3. How does a class constructor prepare the initialization of an object?
+   
+   4. Explain the significance of the "extends" syntax when calling variables or methods from other sub-classes?
+   
+   5. What is the difference between Player and player and when is it necessary to use them?
+   
+   6. How do you print out a series of chars in the arrays?
+   
+   7. What does each pair of square brackets in a 2-D array map[54][46] mean?
+   
+   8. What is object initialization and why shouldn't you use it to call variables from the object's class?
+   
+   9. Explain why we need getters and setters?
+   
+  10. How do you include several objects such as: traps, weapons, treasures, and player by using one 2-D array? In other 
+      words, would you need several for loops to iterate through the coordinates of each individual item?
+   
+   
