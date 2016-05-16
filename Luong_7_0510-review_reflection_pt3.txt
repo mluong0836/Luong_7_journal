@@ -1,0 +1,34 @@
+1. 
+
+public class Hero {
+ int health;
+ int score;
+ int power;
+ boolean weapons;
+ int skill;
+ boolean perception;
+ int level;
+ int x,y,z;
+ String name;
+ char symbol;
+  
+  //class constuctor
+  Hero(String name, int x, int y, char symbol) {
+      this.name = name;
+      this.x = x;
+      this.y = y;
+      this.symbol = symbol;
+  }
+  
+}
+
+2. Hero Micheal = new Hero("Micheal", 50, 75, '@');
+
+3. You made a hero object so that other classes will be able to create/use the variables that you'd want to be shared across
+   each class. The class constructor within this class is used to create a "blue print" or model that you would then use to 
+   format the individual objects that will interact with the other objects from different classes. Therefore, it's no use
+   initializing an object in that class, since they already have the variables declared and can easily initialize it by just
+   calling the variable not the entire object. Objects are meant to be used in different classes to carry the variables over 
+   to that specific class. Therefore, whenever Darkvader.X == Micheal.X and Darkvader.Y == Micheal.Y, attack(); Objects
+   are the necessary components to interaction as they use variables from their classes and carry it over to create new objects
+   when ever needed.
