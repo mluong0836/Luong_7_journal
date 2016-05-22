@@ -1,0 +1,56 @@
+1. Here is an example of an Ogre class with a class constructor:
+
+public class Ogre {
+    int x;
+    int y;
+    int health;
+    boolean isalive;
+    
+    public Ogre(int x, int y, int health, boolean isalive) {
+        this.x = x;
+        this.y = y;
+        this.health = health;
+        this.isalive = isalive;
+    }
+}
+
+2. You would instantiate the Ogre object by typing this line of code below in the necessary class:
+
+    Ogre enemy = new Ogre(rand.nextInt(50), rand.nextInt(50), 1000, true);
+    
+3. Here are two setters for positioning:
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+    
+4. Here is an example of using an Ogre's move method:
+
+public static void movements() {
+    if(player.getpx < this.x) {
+        this.x++;
+    } else if(player.getpx > this.x) {
+        this.x--;
+    } 
+    
+    if(player.getpy < this.y) {
+        this.y--;
+    } else if(player.getpy > this.y) {
+        this.y++;
+    }
+}
+
+5. Here is an example of three ogre objects:
+
+   Enemiez = new Enemiez[3];
+   Ogre enem = new Ogre(x, y, 1000, true);
+   
+   for(int i = 0; i < 3; i++) {
+      enemiez.add(enem);
+   }
+   
+   
