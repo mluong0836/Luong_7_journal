@@ -1,0 +1,46 @@
+1. Casting is in java is the process in which you convert one type of data type into another type. For instance, converting doubles to ints is
+   generally called casting, since it is converted into another data type. However, casting is then branched off into two other branches. The
+   first is called Up-casting is when you convert a "higher" into a smaller or "lower" data type. This can be seen when we want double i to 
+   be equal to int d. On the other hand, down-casting is when you want to convert a lower data type consumption to a larger one; thus, 
+   this process involves an additional clarification process. For example, you would perform a down cast when you want int i to equal to d,
+   which is a double. So, since doubles are larger than ints, this process can be seen as the opposite of the previous up-casting.
+   
+2. An example of up-casting is: 
+
+    public class Upcasting {
+        public static void main (String args[]) {
+            
+            int d = 5;
+            double b;
+            return b = d;
+        }
+    }
+    
+3. An example of down-casting is:
+
+        public class Downcasting {
+        public static void main (String args[]) {
+            
+            int d;
+            double b = 5.0;
+            return d = (int) b;
+        }
+    }
+    
+4. Here's a simple trick to convert a char into a String you would:
+
+    public class Conversions {
+        
+        String name = "" + 'Micheal';
+        
+    }
+    
+    However, the "official code way" would be:
+    
+    public class Conversions {
+        String name = Character.toString("Micheal");
+    }
+    
+    5. The range of value for bytes would be between -128 to 127 bytes. Bytes are calculated through the 8 and 7 bit format in java. As a 
+       result, the bytes corresspond to the multiples of these bits from 01111111 and 10000000. Thus, these values relate to how they are 
+       calculated. 
